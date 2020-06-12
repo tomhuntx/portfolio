@@ -1,0 +1,382 @@
+/* Made with assistance from https://webdesign.tutsplus.com/tutorials/build-a-static-portfolio-with-advanced-css-bar-chart--cms-33050 */
+
+
+/* RESET RULES & HELPER CLASSES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+:root {
+    --gray: #cbcfd3;
+    --white: white;
+    --black: #1a1a1a;
+    --lightwhite: whitesmoke;
+    --lightblue: #009dd3;
+    --peach: #ff9469;
+    --transition-delay: 0.3s;
+    --transition-delay-step: 0.3s;
+    --skills-width: 120px;
+}
+
+
+/* Scrollbar Adjustments */
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(120, 159, 255, 0.5);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.vh-main {
+    height: 200vh;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-blue {
+    color: #0029a6;
+}
+
+.text-lightblue {
+    color: var(--lightblue);
+}
+
+.text-list {
+    padding-left: 200px;
+}
+
+.text-list li {
+    padding-bottom: 10px;
+}
+
+.text-padding {
+    padding-top: 10vh;
+}
+
+.logo-col {
+    color: #ff3f0a;
+}
+
+.bg-white {
+    background: var(--white);
+}
+
+.bg-lightwhite {
+    background: var(--lightwhite);
+}
+
+.i {
+    font-style: italic;
+}
+
+.textimg {
+    float: left;
+    margin: 5px 15px 5px 5px;
+}
+
+.h1 {
+    font: 1rem/1.2 "Hind Guntur", sans-serif;
+    font-size: 5rem;
+}
+
+.h2 {
+    font: 1rem/1.2 "Hind Guntur", sans-serif;
+    font-size: 3rem;
+}
+
+.h3 {
+    font: 1rem/1.2 "Hind Guntur", sans-serif;
+    font-size: 2rem;
+}
+
+.text {
+    font-size: 1.2rem;
+    width: 700px;
+    padding: 20px;
+    line-height: 1.3;
+}
+
+#gpa {
+    color: limegreen;
+    font-weight: 600;
+}
+
+
+/* BODY */
+
+body {
+    font: 1rem/1.2 "Lucida Console", Monaco, monospace;
+    color: var(--black);
+}
+
+
+/* HEADER */
+
+.page-header {
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    z-index: 10;
+}
+
+.page-header .logo {
+    font-size: 2rem;
+}
+
+.page-header li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.page-header a {
+    font-size: 1.1rem;
+}
+
+.scroll-down {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.scroll-down.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.scroll-down::after {
+    content: "";
+    display: block;
+    margin: 10px auto 0;
+    width: 1px;
+    height: 30px;
+    background: var(--black);
+    transform-origin: bottom;
+    animation: pulse 1.5s infinite linear;
+}
+
+
+/* ABOUT ME */
+
+.about {
+    margin: 100px;
+}
+
+
+/* BG IMG - UNUSED */
+
+.bg-img {
+    background: #fff url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/code-wp.jpg) no-repeat center / cover;
+}
+
+.bg-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 7rem;
+    background: var(--lightwhite);
+    transform: skew(-5deg);
+    transform-origin: left bottom;
+}
+
+
+/* CHART */
+
+.chart-wrapper {
+    width: 95%;
+    max-width: 500px;
+    margin-right: 100px;
+}
+
+.no-list {
+    list-style: none;
+}
+
+.chart-wrapper .chart-skills li::before,
+.chart-wrapper .chart-skills li::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: var(--skills-width);
+    height: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 2;
+}
+
+.chart-wrapper .chart-skills li::after {
+    width: calc(100% - var(--skills-width));
+    background: rgba(211, 211, 211, 0.3);
+}
+
+.chart-wrapper .chart-skills li::before {
+    width: 0;
+    background: #8400d6;
+    transition: width 0.65s ease-out;
+}
+
+.chart-wrapper.in-view .chart-skills li:nth-child(1)::before {
+    width: calc(78% - var(--skills-width));
+    transition-delay: var(--transition-delay);
+}
+
+.chart-wrapper.in-view .chart-skills li:nth-child(2)::before {
+    width: calc(63% - var(--skills-width));
+    transition-delay: calc( var(--transition-delay) + var(--transition-delay-step));
+}
+
+.chart-wrapper.in-view .chart-skills li:nth-child(3)::before {
+    width: calc(58% - var(--skills-width));
+    transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 2);
+}
+
+.chart-wrapper.in-view .chart-skills li:nth-child(4)::before {
+    width: calc(52% - var(--skills-width));
+    transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 3);
+}
+
+.chart-wrapper.in-view .chart-skills li:nth-child(5)::before {
+    width: calc(49% - var(--skills-width));
+    transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 4);
+}
+
+.chart-wrapper .chart-skills span {
+    display: inline-block;
+    width: var(--skills-width);
+    padding: 15px;
+    text-align: right;
+}
+
+.chart-wrapper .chart-levels {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: var(--skills-width);
+}
+
+.chart-wrapper .chart-levels li {
+    border-right: 1px solid rgba(211, 211, 211, 0.3);
+}
+
+.chart-wrapper .chart-levels li:last-child {
+    border-right: 0;
+}
+
+.chart-wrapper .chart-levels span {
+    bottom: 0;
+    transform: translateY(40px) translateX(10px) rotate(25deg);
+    padding: 10px;
+    width: 100%;
+}
+
+
+/* CREATOR */
+
+.creator {
+    right: 20px;
+    bottom: 20px;
+}
+
+.creator span {
+    color: #e31b23;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes pulse {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.65);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+/* MQ */
+
+@media screen and (max-width: 900px) {
+    .bg-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+    .text {
+        width: 400px;
+        padding: 30px;
+    }
+}
