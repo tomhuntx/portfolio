@@ -112,7 +112,11 @@ a {
 }
 
 .text-lightblue {
-    color: var(--lightblue);
+    color: #00c3ff;
+}
+
+.image-table {
+    width: 90%;
 }
 
 .text-list {
@@ -123,7 +127,7 @@ a {
 }
 
 .text-list-margin {
-    margin-left: 20%;
+    margin-left: 23%;
 }
 
 .text-list li {
@@ -154,6 +158,10 @@ a {
     background: var(--white);
 }
 
+.width-100 {
+    width: 100%;
+}
+
 .bg-lightwhite {
     background: var(--lightwhite);
 }
@@ -164,7 +172,7 @@ a {
 
 .textimg {
     float: left;
-    margin: 5px 15px 5px 5px;
+    margin: 10px 15px 10px 10px;
 }
 
 .h1 {
@@ -332,7 +340,7 @@ body {
     transition: width 0.65s ease-out;
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(1)::before {
-    width: calc(78% - var(--skills-width));
+    width: calc(80% - var(--skills-width));
     transition-delay: var(--transition-delay);
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(2)::before {
