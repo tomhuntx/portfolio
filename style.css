@@ -171,6 +171,7 @@ a {
 }
 
 .textimg {
+    box-sizing: none;
     float: left;
     margin: 10px 15px 10px 10px;
 }
