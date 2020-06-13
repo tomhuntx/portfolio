@@ -116,7 +116,7 @@ a {
 }
 
 .image-table {
-    width: 90%;
+    width: 100%;
 }
 
 .text-list {
@@ -470,7 +470,7 @@ body {
     }
     .text {
         width: 400px;
-        padding: 30px;
+        padding: 20px 0px 20px 0px;
     }
     .text-large {
         width: 400px;
