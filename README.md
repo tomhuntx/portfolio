@@ -1,3 +1,4 @@
 # portfolio
-Portfolio Website for Tom Hunter
-WIP
+Portfolio Website for Tom Hunter.
+
+Currently a WIP
