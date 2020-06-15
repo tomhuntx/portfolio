@@ -486,6 +486,10 @@ body {
     .bg-img {
         display: none;
     }
+    .text {
+        width: 400px;
+        padding: 20px 0px 20px 0px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -493,11 +497,11 @@ body {
         font-size: 12px;
     }
     .text {
-        width: 400px;
+        width: 300px;
         padding: 20px 0px 20px 0px;
     }
     .text-large {
-        width: 400px;
+        width: 375px;
     }
     .text-cont {
         margin: 10px;
