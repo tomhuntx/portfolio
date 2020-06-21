@@ -368,19 +368,19 @@ body {
     transition-delay: var(--transition-delay);
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(2)::before {
-    width: calc(63% - var(--skills-width));
+    width: calc(65% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step));
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(3)::before {
-    width: calc(60% - var(--skills-width));
+    width: calc(62% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 2);
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(4)::before {
-    width: calc(52% - var(--skills-width));
+    width: calc(57% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 3);
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(5)::before {
-    width: calc(49% - var(--skills-width));
+    width: calc(50% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 4);
 }
 
@@ -412,7 +412,7 @@ body {
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 3);
 }
 .chart-wrapper.in-view .chart-skills2 li:nth-child(6)::before {
-    width: calc(49% - var(--skills-width));
+    width: calc(50% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 4);
 }
 
@@ -422,12 +422,10 @@ body {
     width: var(--skills-width);
     padding: 15px;
     text-align: right;
-}
-
-.chart-wrapper .chart-skills2 li:nth-child(2) span {
-    width: 150px;
+    width: 160px;
     margin-left: -30px;
 }
+
 
 .chart-wrapper .chart-levels {
     left: 0;
