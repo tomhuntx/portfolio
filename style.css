@@ -27,6 +27,19 @@
     background: rgba(120, 159, 255, 0.5);
 }
 
+/* Image Zooming */
+
+img {
+    transition:transform 0.25s ease;
+}
+
+img:active {
+    -webkit-transform:scale(2);
+    transform:scale(2);
+    position:relative;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -513,5 +526,5 @@ body {
     .text {
         width: 400px;
         padding: 20px 0px 20px 0px;
-    }
+    }98
 }
