@@ -30,13 +30,12 @@
 /* Image Zooming */
 
 img {
-    transition:transform 0.25s ease;
+    transition: transform 0.25s ease;
 }
 
 img:active {
-    -webkit-transform:scale(2);
-    transform:scale(2);
-    position:relative;
+    -webkit-transform: scale(2);
+    transform: scale(2);
 }
 
 
@@ -501,6 +500,10 @@ body {
 @media screen and (max-width: 900px) {
     .bg-img {
         display: none;
+    }
+    img:active {
+        -webkit-transform: none;
+        transform: none;
     }
 }
 
