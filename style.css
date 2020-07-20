@@ -38,7 +38,6 @@ img:active {
     transform: scale(2);
 }
 
-
 * {
     padding: 0;
     margin: 0;
@@ -146,7 +145,7 @@ a {
 }
 
 .textgap {
-    padding-top: 13vh;
+    padding-top: 10vh;
 }
 
 .largegap {
@@ -212,7 +211,7 @@ a {
 
 .h2 {
     font: 1rem/1.2 "Hind Guntur", sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .h3 {
@@ -385,19 +384,19 @@ body {
     transition-delay: var(--transition-delay);
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(2)::before {
-    width: calc(65% - var(--skills-width));
+    width: calc(77% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step));
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(3)::before {
-    width: calc(62% - var(--skills-width));
+    width: calc(69% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 2);
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(4)::before {
-    width: calc(57% - var(--skills-width));
+    width: calc(66% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 3);
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(5)::before {
-    width: calc(50% - var(--skills-width));
+    width: calc(58% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 4);
 }
 
@@ -409,7 +408,7 @@ body {
     transition: width 0.65s ease-out;
 }
 .chart-wrapper.in-view .chart-skills2 li:nth-child(1)::before {
-    width: calc(83% - var(--skills-width));
+    width: calc(81% - var(--skills-width));
     transition-delay: var(--transition-delay);
 }
 .chart-wrapper.in-view .chart-skills2 li:nth-child(2)::before {
@@ -417,20 +416,16 @@ body {
     transition-delay: var(--transition-delay);
 }
 .chart-wrapper.in-view .chart-skills2 li:nth-child(3)::before {
-    width: calc(70% - var(--skills-width));
+    width: calc(68% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step));
 }
 .chart-wrapper.in-view .chart-skills2 li:nth-child(4)::before {
-    width: calc(68% - var(--skills-width));
+    width: calc(64% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 2);
 }
 .chart-wrapper.in-view .chart-skills2 li:nth-child(5)::before {
-    width: calc(63% - var(--skills-width));
+    width: calc(61% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 3);
-}
-.chart-wrapper.in-view .chart-skills2 li:nth-child(6)::before {
-    width: calc(50% - var(--skills-width));
-    transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 4);
 }
 
 .chart-wrapper .chart-skills span,
