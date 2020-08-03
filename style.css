@@ -1,13 +1,13 @@
-/* Made with assistance from https://webdesign.tutsplus.com/tutorials/build-a-static-portfolio-with-advanced-css-bar-chart--cms-33050 */
+/* css base made with assistance of https://webdesign.tutsplus.com/tutorials/build-a-static-portfolio-with-advanced-css-bar-chart--cms-33050 */
 
 
-/* RESET RULES & HELPER CLASSES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* All */
 
 :root {
     --gray: #cbcfd3;
     --white: white;
     --black: #1a1a1a;
+    --blue: #0033e8;
     --lightwhite: whitesmoke;
     --lightblue: #009dd3;
     --peach: #ff9469;
@@ -19,24 +19,25 @@
 /* Scrollbar Adjustments */
 
 ::-webkit-scrollbar {
-    width: 10px;
-    background: transparent;
+    width: 11px;
+    background: var(--lightwhite);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(120, 159, 255, 0.5);
+    background: rgba(0, 51, 232, 0.4);
 }
 
 /* Image Zooming */
 
-img {
+img .img-zoom {
     transition: transform 0.25s ease;
 }
 
-img:active {
+img .img-zoom:active {
     -webkit-transform: scale(2);
     transform: scale(2);
 }
+
 
 * {
     padding: 0;
@@ -57,6 +58,10 @@ a {
     display: flex;
 }
 
+.flex-1 {
+    flex: 1;
+}
+
 .flex-column {
     flex-direction: column;
 }
@@ -69,15 +74,40 @@ a {
     justify-content: space-between;
 }
 
+.nav-list {
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.page-header .nav-list {
+    font-size: 2rem;
+}
+
+/* Navlist */
+.nav-list li {
+    margin: 0px 5px;
+    border-bottom: 2px solid transparent;    
+    transition: all .2s ease-in;
+    
+    font: sans-serif;
+}
+.nav-list li:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.nav-list li:focus  {
+    color: red;
+    background: red;
+}
+
 .align-items-center {
     align-items: center;
 }
 
 .align-items-end {
     align-items: flex-end;
-}
-
-.align-top {
 }
 
 .flex-grow-1 {
@@ -91,6 +121,10 @@ a {
 
 .vh-100 {
     height: 100vh;
+}
+
+.h-20 {
+    height: 20px;
 }
 
 .vh-main {
@@ -118,7 +152,7 @@ a {
 }
 
 .text-blue {
-    color: #0029a6;
+    color: var(--blue);
 }
 
 .text-lightblue {
@@ -127,9 +161,6 @@ a {
 
 .image-table {
     width: 100%;
-}
-
-.text-list {
 }
 
 .text-list-inside {
@@ -164,8 +195,21 @@ a {
     color: #ff3f0a;
 }
 
+.logo {
+    margin-left: 0.5vw;
+    margin-top: 0.2vw;
+}
+
 .bg-white {
     background: var(--white);
+}
+
+.bg-grey {
+    background: #e3e3e3;
+}
+
+.txt-white {
+    color: white;
 }
 
 .bg-lightwhite {
@@ -271,8 +315,12 @@ body {
     left: 0;
     right: 0;
     top: 0;
-    padding: 20px;
+    padding: 8px;
     z-index: 10;
+}
+
+.header-shadow {
+    box-shadow: 0px 2px 6px rgba(160, 160, 160, 0.4);
 }
 
 .page-header .logo {
@@ -303,12 +351,12 @@ body {
 .scroll-down::after {
     content: "";
     display: block;
-    margin: 10px auto 0;
-    width: 1px;
-    height: 30px;
+    margin: 12px auto 0;
+    width: 1.5px;
+    height: 32px;
     background: var(--black);
     transform-origin: bottom;
-    animation: pulse 1.5s infinite linear;
+    animation: pulse 1s infinite linear;
 }
 
 
@@ -380,11 +428,11 @@ body {
     transition: width 0.65s ease-out;
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(1)::before {
-    width: calc(80% - var(--skills-width));
+    width: calc(82% - var(--skills-width));
     transition-delay: var(--transition-delay);
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(2)::before {
-    width: calc(77% - var(--skills-width));
+    width: calc(78% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step));
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(3)::before {
@@ -424,7 +472,7 @@ body {
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 2);
 }
 .chart-wrapper.in-view .chart-skills2 li:nth-child(5)::before {
-    width: calc(61% - var(--skills-width));
+    width: calc(62% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 3);
 }
 
@@ -462,16 +510,87 @@ body {
     width: 100%;
 }
 
+/* Game Images (for portfolio) */
 
-/* CREATOR */
-
-.creator {
-    right: 20px;
-    bottom: 20px;
+.gameimg-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
 }
 
-.creator span {
-    color: #e31b23;
+.gameimg-column {
+  flex: 25%;
+  padding: 0 7px;
+}
+
+.gameimg-column img {
+  margin-top: 14px;
+  vertical-align: middle;
+}
+
+.gameimg-container {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+}
+
+.gameimglarge-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.gameimg-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Button base */
+.gameimg-container .btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+    
+    font-family: monospace;
+    color: transparent;
+    font-size: 10px;
+    width: 12%;
+    height: 12%;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Play game button */
+.play-btn {
+    top: 15%;
+    left: 90%;
+    background: transparent;
+    background-image: url(img/icons/play-game.png);
+    
+}
+.play-btn:active {
+    color: rebeccapurple;
+}
+
+/* Download button */
+.dld-btn {
+    top: 15%;
+    left: 73%;
+    background: transparent;
+    background-image: url(img/icons/download1.png);
+}
+.dld-btn:active {
+    
+}
+
+.gameimg-container .btn:hover {
+  color: white;
 }
 
 
@@ -520,9 +639,8 @@ body {
         width: 95%;
         height: 225px;
     }
-    
     .text {
         width: 400px;
         padding: 20px 0px 20px 0px;
-    }98
+    }
 }
