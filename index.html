@@ -16,10 +16,10 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     
     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap" rel="stylesheet">
-    
 </head>
 <body> 
 
@@ -29,10 +29,10 @@
   <nav class="d-flex justify-content-center">
     <a href="" class="logo bold flex-1"><p>TH</p></a>
     <ul class="nav-list d-flex no-list">
-      <li><a href="#about">About</a></li>
+      <li><a href="#about" id="nav-here">About</a></li>
       <li><a href="./projects.html">Projects</a></li>
-      <li><a href="#games">Resume</a></li>
-      <li><a href="#games">Devlog</a></li>
+      <li><a href="./resume.html">Resume</a></li>
+      <li><a href="./devlog.html">Devlog</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a></a></li>
     </ul>
@@ -73,8 +73,8 @@
                 <li>Achieved a GPA of <a id="gpa">6.2</a>.</li>
                 <li>Gained:</li>
                 <ul class="nested-list">
-                    <li>3 Years of Game Development Experience</li>
                     <li>3 Years of Programming Experience</li>
+                    <li>3 Years of Game Development Experience</li>
                     <li>2.5 Years of Unity Experience</li>
                     <li>1 Year of Unreal Engine Experience</li>
                 </ul>
@@ -88,7 +88,7 @@
                From building a Raspberry-Pi controller that plays snake to creating and publising a year-long game project, I have plentiful experience working on projects of all sizes.
             </div>
              <div class="button-container">
-                <a class="button -blue center" href="./projects.html">See My Projects</a>
+                <a class="button -blue center" href="./projects.html">See Projects</a>
             </div>
            </div>
         </div>
@@ -176,10 +176,10 @@
       </ul>
     </div>
   </div>
-  <div class="d-flex justify-content-center align-items-center flex-grow-1">
-    <span class="d-block title-colour h3 largegap knowledge">Knowledge</span>
+  <div class="d-flex justify-content-center align-items-center flex-grow-1 largegap">
+    <span class="d-block title-colour h3 knowledge">Knowledge</span>
   </div>
-    <div class="d-flex justify-content-center align-items-center flex-grow-1 text-cont">
+    <div class="d-flex justify-content-center align-items-center flex-grow-1 text-cont gapbottom">
         <div class="flex-grow-1 position-relative equal-list">
             <h4 class="text-center h4">Programming</h4>
             <ul class="text-list text-list-margin list-animation">
@@ -282,6 +282,7 @@
       else nav.classList.remove("shadow");
     }
     
+    /*
     // List items change colour on clicked
     var listItems = document.querySelectorAll('nav ul li');
 
@@ -293,10 +294,11 @@
             listItems[i].style.color = '';
         }
             
-        // change clicked item to red
+        // change clicked item colour
         this.style.color = '#F2B66D';
       });
     });
+    */
 </script>
     
 </body>
