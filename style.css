@@ -229,6 +229,10 @@ a {
     padding-bottom: 25vh;
 }
 
+.gapbottoms {
+    padding-bottom: 30px;
+}
+
 .marginsides {
     margin-left: 20px;
     margin-right: 20px;
@@ -344,7 +348,7 @@ a {
 .text-half {
     font-size: 1.2rem;
     width: 500px;
-    padding: 15px;
+    padding: 5px 20px;
     line-height: 1.3;
 }
 
@@ -639,10 +643,17 @@ body {
 
 .gameimg-container img,
 .gameimglarge-container img {
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     border: 2px solid var(--bg-main);
     box-shadow: 1px 3px 6px var(--bg-main);
+}
+
+.nobord img {
+    border: none;
+    box-shadow: none;
 }
 
 /* Button base */
@@ -659,8 +670,6 @@ body {
     font-family: monospace;
     color: transparent;
     font-size: 10px;
-    width: 25px;
-    height: 25px;
     border: none;
     cursor: pointer;
     border-radius: 4px;
@@ -675,6 +684,8 @@ body {
 
 /* Play game button */
 .play-btn {
+    width: 26px;
+    height: 26px;
     top: 0;
     right: 0;
     margin: 40px 0px 20px 20px;
@@ -684,6 +695,8 @@ body {
 
 /* Download button */
 .dld-btn {
+    width: 25px;
+    height: 25px;
     top: 0;
     right: 0;
     margin: 40px 40px 20px 20px;
@@ -693,6 +706,8 @@ body {
 
 /* Youtube button */
 .yt-btn {
+    width: 30px;
+    height: 30px;
     top: 0;
     right: 0;
     margin: 40px 0px 20px 20px;
@@ -717,7 +732,7 @@ body {
 
 .button-container {
     display: flex;
-    margin: 30px auto;
+    margin: 15px auto;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -728,7 +743,7 @@ body {
     overflow: hidden;
 
     margin: 10px;
-    padding: 12px 12px;
+    padding: 10px 12px;
 
     cursor: pointer;
     user-select: none;
@@ -774,7 +789,84 @@ body {
 }
 .button.-blue {
     color: white;
-    background: var(--blue);
+    background: #005c99;
+}
+
+/* Image overlay by C U on codepen: https://codepen.io/-cu-/pen/gOaKNbM */
+
+.overlay-outer {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.gameimg-container .overlay {
+    margin-top: 13px;
+}
+
+a:hover .overlay {
+    opacity: 1;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.overlay-outer:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h5 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
+}
+
+.content-details p {
+    color: #fff;
+    font-size: 0.8em;
+    padding: 0 5%;
+}
+
+.fadeIn_bottom {
+  top: 80%;
+}
+
+.content-title {
+    
+}
+
+.content-text {
+    font-size: 0.8rem;
+}
+
+.content-text-large {
+    font-size: 0.9rem;
+    padding: 0 20%;
 }
 
 
@@ -933,6 +1025,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
         width: 90%;
         padding-top: 0;
     }
+    .gameimglarge-container .content-details {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+    .gameimglarge-container .overlay {
+        opacity: 0.4;
+    }
+    .text-list li { 
+        padding-bottom: 8px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -970,5 +1073,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     .play-btn, .dld-btn { 
         visibility: hidden;
         margin: 0;
+    }
+    .button {
+        padding: 5px 2px;
+        font-size: 12px;
     }
 }
