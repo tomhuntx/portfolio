@@ -27,9 +27,9 @@
 
 <header class="position-fixed bg-main page-header">
   <nav class="d-flex justify-content-center">
-    <a href="" class="logo bold flex-1"><p>TH</p></a>
+    <a href="./index.html" class="logo bold flex-1"><p>TH</p></a>
     <ul class="nav-list d-flex no-list">
-      <li><a href="./about.html">About</a></li>
+      <li><a href="./about.html#about" id="nav-here">About</a></li>
       <li><a href="./projects.html">Projects</a></li>
       <li><a href="./resume.html">Resume</a></li>
       <li><a href="./devblog.html">Devblog</a></li>
@@ -38,34 +38,64 @@
     </ul>
   </nav>
 </header>
-<section class="d-flex justify-content-center align-items-center vh-100 bg-main nav-detach-point">
-  <h1 class="text-center h1 h1padding">Tom Hunter
-    <span class="d-block subtitle-colour h3">Games <span class="text-white">and</span> Software Programmer<span class="blinker"></span></span>
+<section class="d-flex justify-content-center align-items-center vh-27 bg-main nav-detach-point">
+  <h1 class="text-center h12 notmain">Tom Hunter
+    <span class="d-block subtitle-colour h3">About Me<span class="blinker"></span></span>
   </h1>
-  <img class="frontimg" src="img/test-man.png"> 
-  <div class="position-absolute scroll-down">See what I can do</div>
-    <div id="socials">
-        <a class="twitter-btn socials-btn" href="https://twitter.com/tomakesgames" target="_blank"></a>
-        <a class="itchio-btn socials-btn" href="#" target="_blank"></a>
-        <a class="linkedin-btn socials-btn" href="https://www.linkedin.com/in/tom-william-hunter/" target="_blank"></a>
-    </div>
 </section>
     
 <!-- Main Text -->
     
-<section class="flex-column vh-main bg-sub gapbottom">
-     <div class="d-flex justify-content-center align-items-center flex-grow-1">
-    <div class="about">
-      <h2 class="h2 text-center">Hi, I'm Tom.</h2>
-        <div class="text-center text-full">
-            I make games and software.
-        </div>
+<section class="flex-column vh-main bg-sub gapbottom" id="about">
     
-    
-    <div class="d-flex justify-content-center align-items-center flex-grow-1 textgap">
-    <span class="d-block title-colour h3">Languages</span>
-    </div>
     <div class="d-flex justify-content-center align-items-center flex-grow-1">
+      <div class="d-flex justify-content-center flex-row">
+          <div class="textgap">
+           <h3 class="text-center title-colour h3">Who Am I?</h3>
+            <div class="text-half">
+            <div class="text-small">
+               Hi, I'm Tom. It's great to meet you.
+               <br><br>
+               I am an accomplished games programmer and developer with a passion for games and technology and I love  being around like-minded people.
+               <br><br>
+               I grew up in North-Western Australia, I studied in Brisbane, and I am planning to move to Melbourne. I am 20 years old.
+               <br><br>
+               I hope to be a part of making some of the world's best games and even pioneer new digital techology. 
+            </div>
+                <div class="button-container">
+                <a class="button -blue center" href="./resume.html">See Resume</a>
+                </div>
+            </div>
+        </div>
+          
+         <div class="textgap"> 
+          <h3 class="text-center title-colour h3">My Studies</h3>
+          <div class="text-half">
+               <div class="text-center"><a href="https://www.qut.edu.au/courses/bachelor-of-games-and-interactive-environments-software-technologies" target="_blank" class="b text-links">Bachelor of Games and Interactive Environments</a>, QUT 2017-2020.</div>
+                <br>
+                <div class="justify-content-center align-items-center text-list-margin">
+                  <ul class="text-list text-small">
+                    <li>24 subjects of programming, game development, and related topics.</li>
+                    <li>Created over a dozen games and software projects.</li>
+                    <li>Achieved a GPA of <a id="gpa">6.2</a>.</li>
+                    <li>Gained:</li>
+                    <ul class="nested-list smalltext">
+                        <li>3 Years of Programming Experience</li>
+                        <li>3 Years of Game Development Experience</li>
+                        <li>2.5 Years of Unity Experience</li>
+                        <li>1 Year of Unreal Engine 4 Experience</li>
+                    </ul>
+                  </ul>  
+                </div>
+               </div>
+            </div>
+         </div>
+  </div>
+    
+  <div class="d-flex justify-content-center align-items-center flex-grow-1 textgap">
+    <span class="d-block title-colour h3">Languages</span>
+  </div>
+  <div class="d-flex justify-content-center align-items-center flex-grow-1">
     <div class="position-relative chart-wrapper">
       <ul class="chart-skills no-list">
         <li class="position-relative">
@@ -102,11 +132,11 @@
         </li>
       </ul>
     </div>
-    </div>
-    <div class="d-flex justify-content-center align-items-center flex-grow-1">
+  </div>
+  <div class="d-flex justify-content-center align-items-center flex-grow-1">
     <span class="d-block title-colour h3 largegap">Software</span>
-    </div>
-    <div class="d-flex justify-content-center align-items-center flex-grow-1">
+  </div>
+<div class="d-flex justify-content-center align-items-center flex-grow-1">
     <div class="position-relative chart-wrapper">
       <ul class="chart-skills2 no-list">
         <li class="position-relative">
@@ -140,38 +170,55 @@
         </li>
       </ul>
     </div>
+  </div>
+    
+    
+  <div class="d-flex justify-content-center align-items-center flex-grow-1 largegap">
+    <span class="d-block title-colour h3 knowledge">Knowledge</span>
+  </div>
+    <div class="d-flex justify-content-center align-items-center flex-grow-1 text-cont gapbottom">
+        <div class="flex-grow-1 position-relative equal-list">
+            <h4 class="text-center h4">Programming</h4>
+            <ul class="text-list text-list-margin list-animation">
+              <li>Unity &amp; Unreal Libraries</li>
+              <li>Common C# and C++ Libraries</li>
+              <li>Vector Maths</li>
+              <li>Algorithms</li>
+              <li>Advanced Logic</li>
+              <li>GUI Applications</li>
+              <li>Program Design &amp; Pseudocode</li>
+            </ul>  
+         </div>
+        <div class="flex-grow-1 position-relative equal-list">
+            <h4 class="text-center h4">Games</h4>
+            <ul class="text-list text-list-margin list-animation">
+              <li>Played &amp; analysed hundreds of games</li>
+              <li>Familiar with Blueprints</li>
+              <li>Asset Implementations (SFX, Animations, UI, etc)</li>
+              <li>Testing and QA Experience</li>
+            </ul>  
+        </div>
+        <div class="flex-grow-1 position-relative equal-list">
+            <h4 class="text-center h4">Production</h4>
+            <ul class="text-list text-list-margin list-animation">
+              <li>Game Production Pipeline</li>
+              <li>Design Experience</li>
+              <li>Maya Animation &amp; Modelling</li>
+              <li>Agile Development</li>
+              <li>Test-Driven Development</li>
+              <li>DevOps</li>
+            </ul>  
+        </div>
+        <div class="flex-grow-1 position-relative equal-list">
+            <h4 class="text-center h4">AI</h4>
+            <ul class="text-list text-list-margin list-animation">
+              <li>State Machines</li>
+              <li>Behaviour Trees</li>
+              <li>NavMesh</li>
+              <li>Utility &amp; Heuristic Functions</li>
+            </ul>  
+        </div>
     </div>
-    
-    
-   
-    
-      <div class="d-flex justify-content-center flex-grow-1 flex-row largegap">
-          <div>
-           <h3 class="text-center title-colour h3">About Me</h3>
-            <div class="text-half">
-            <div class="text-small">
-               I am a practiced programmer and well-rounded game developer who loves to solve problems. I have an exceptional capacity to analyze, design, and iterate code that is clean, scalable, and well-documented.
-            </div>
-                <div class="button-container">
-                <a class="button -blue center" href="./about.html">Learn More</a>
-                </div>
-            </div>
-            </div>
-          
-         <div> 
-          <h3 class="text-center title-colour h3">My Projects</h3>
-            <div class="text-half">
-            <div class="text-small">
-               From building a Raspberry-Pi controller that plays snake to creating and publising a year-long game project, I have plentiful experience working on projects of all sizes.
-            </div>
-                <div class="button-container">
-                <a class="button -blue center" href="./projects.html">See Projects</a>
-                </div>
-            </div>
-            </div>
-            </div>
-      </div>
-     </div>
 </section>
     
 <!-- Contact -->
@@ -188,10 +235,11 @@
     
 <!-- JS -->
     
-<script>    
+<script>
     const chartWrapper = document.querySelectorAll('.chart-wrapper')[0];
     const chartWrapper2 = document.querySelectorAll('.chart-wrapper')[1];
     const scrollDown = document.querySelector(".scroll-down");
+
     const homeScreen = document.querySelectorAll('.nav-detach-point')[0];
     const nav = document.querySelector('.page-header');
     
@@ -215,21 +263,41 @@
     if (ua.indexOf('chrome') == -1) wontWork = true;
     
     function scrollHandler() {
-        window.pageYOffset > 0
-        ? scrollDown.classList.add("is-hidden")
-        : scrollDown.classList.remove("is-hidden");
-              
+      
       // If first chart is in view - or webkit won't work, display chart animation
       if (isElementInViewport(chartWrapper, 150) || wontWork) chartWrapper.classList.add("in-view");
+      else chartWrapper.classList.remove("in-view");
       
+      // If second chart is in view - or webkit won't work, display chart animation
+      if (isElementInViewport(chartWrapper2, 150) || wontWork) chartWrapper2.classList.add("in-view");
+      else chartWrapper2.classList.remove("in-view");
         
       // If second chart is in view - or webkit won't work, display chart animation
       if (isElementInViewport(chartWrapper2, 150) || wontWork) chartWrapper2.classList.add("in-view");
+      else chartWrapper2.classList.remove("in-view");
         
       // If home screen is in view
       if (!isElementInViewport(homeScreen, 1)) nav.classList.add("shadow");
       else nav.classList.remove("shadow");
     }
+    
+    /*
+    // List items change colour on clicked
+    var listItems = document.querySelectorAll('nav ul li');
+
+    // Add click event listeners to each nav list item
+    listItems.forEach(function (listItem) {
+        listItem.addEventListener('click', function () {
+        // change all other items to black
+        for (let i = 0; i < listItems.length; i++) {
+            listItems[i].style.color = '';
+        }
+            
+        // change clicked item colour
+        this.style.color = '#F2B66D';
+      });
+    });
+    */
 </script>
     
 </body>
