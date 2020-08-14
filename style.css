@@ -335,7 +335,7 @@ a {
 
 .h3 {
     font: 1rem/1.2 "Hind Guntur", sans-serif;
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 .h4 {
@@ -493,7 +493,11 @@ body {
 
 .resume {
     border: 3px solid var(--bg-main);
-    box-shadow: 2px 6px 8px var(--bg-main);
+    box-shadow: 2px 6px 8px rgb(0, 0, 0, 0.3);
+}
+
+.pointer img {
+    cursor: pointer;
 }
 
 /* BG IMG - UNUSED */
@@ -708,6 +712,9 @@ body {
     cursor: pointer;
     border-radius: 4px;
     text-align: center;
+    
+    /* DISABLED */
+    visibility: hidden;
 }
 .btn:hover {
     opacity: 0.8;
@@ -956,7 +963,6 @@ a:hover .overlay {
     background-repeat: no-repeat; 
 }
 
-
 .twitter-btn {
     background-image: url(img/icons/twitter-colour.png);
     background-size: 95%;
@@ -996,10 +1002,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   animation-timing-function: cubic-bezier(1,0,0,1);
   animation-duration: 1s;
   display: inline-block;
-  width: 0.15rem;
+  width: 0.1rem;
   height: 1.85rem;
   margin-left: 2px;
-  margin-bottom: -2px;
+  margin-bottom: -3px;
   border-radius: 2px;
   box-shadow: 0 0 10px rgba(white,.3);
   background: white;
@@ -1045,7 +1051,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     }
     .text {
         width: 90%;
-        padding: 20px 0px 20px 0px;
+        padding: 5px 0px 5px 0px;
     }
     .text-large {
         width: 90%;
@@ -1129,9 +1135,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
         font-size: 12px;
     }
     .textimg, .textimgr {
-        width: 90%;
-        float: none;
-        margin: 5px 5%;
+        width: 80%;
+        float: left;
+        margin: 5px 10%;
     }
     .chart-wrapper {
         min-width: 300px;

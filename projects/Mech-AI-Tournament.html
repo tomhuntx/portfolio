@@ -49,72 +49,50 @@
     
 <section class="flex-column vh-main bg-sub">
   
-  <div class="d-flex justify-content-center align-items-center flex-grow-1 projectgap" id="BEEPs-Adventure">
-    <span class="d-block title-colour h3">BEEP's Adventure</span>
-  </div>
+    
+    <div class="d-flex justify-content-center align-items-center flex-grow-1 tinygap">
+        <div class="text text-center">
+          <span class="b h5">The 2020 Mech AI Tournament</span> was run in my "AI for Games" class and involved creating a combat AI using scripting and behaviour trees. My bot took first place and even beat the top three champions of 2019.
+          <div class="button-container tinygap">
+            <a class="button -blue" href="../BEEPs-Adventure/beep.html">Play (WebGL)</a>
+            <a class="button -blue" href="../img/beep.jpeg" download="BEEPs-Adventure">Download AI</a>
+          </div>
+        </div>
+    </div>
+    
+    <div class="d-flex justify-content-center align-items-center flex-grow-1 tinygap">
+        <span class="d-block title-colour h3">Livestream</span>
+    </div>
+    <div class="d-flex justify-content-center align-items-center flex-grow-1 tinygap">
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/ir_fWFE7Hyw?start=3132" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center flex-grow-1 textgap">
+        <span class="d-block title-colour h3 tinygap">The Tournament</span>
+    </div>
     <div class="d-flex justify-content-center align-items-center flex-grow-1">
       <div class="text text-large">
-          <div class="text-large text-center">
-             YouTube | Download | WebGL<br><br>
-          </div>
-          <img class="textimg" src="../img/beep.jpeg" width="320px" height="auto">
-          BEEP's Adventure is a Unity game I worked on through both semesters of my final year.
-          <br><br>
-          Role: Programmer in a group of 7 with two designers, two animators, one other programmer, and a producer.
-          <br><br>
-          You play as the prototype robot BEEP who...
+            <img class="textimgr" src="../img/bot-main.png" width="375px" height="auto">
+            The 2020 Mech AI Tournament involved using behaviour trees via PandaBT in Unity to run in-script behaviours programmed in C#. 
+            We were only able to change the robot's decisions, not their physical abilities. Our behaviour scripts were then attached to Mech prefabs and pitched against each other in a round-based tournament. 
+            <br><br>
+            There were 24 participants from our class, and I made it to the semi-finals, then
+            to the finals, and won the finals. My AI bot also beat the top 3 champions 
+            from 2019 in a bonus round.
       </div>
-  </div>
+    </div>
     
-  <div class="d-flex justify-content-center align-items-center flex-grow-1 projectgap" id="Environmental-Threat">
-    <span class="d-block title-colour h3">Environmental Threat</span>
-  </div>
-    <div class="d-flex justify-content-center align-items-center flex-grow-1">
+    <div class="d-flex justify-content-center align-items-center flex-grow-1 textgap">
+        <span class="d-block title-colour h3">The Creation of BEEP-X</span>
+    </div>
+    <div class="d-flex justify-content-center align-items-center flex-grow-1 gapbottom">
       <div class="text text-large">
-          <div class="text-large text-center">
-             YouTube | Download | WebGL<br><br>
-          </div>
-          <img class="textimgr" src="img/environmentalthreat.png" width="350px" height="auto">
-          Educational mobile game made in Unity for Baringa State Primary School to educate its students about the endangered Wallum Sedge Frog. Our game became a part of their curriculum. 
-          <br><br>
-          Role: Programmer in a group of 4 with a designer, an animator, and a producer.
-          <br><br>
-          Environmental Threat was built as three minigame levels: one to teach students how to identify the frog's habitat, one to teach how their habitat is being affected (changes in pH), and one to identify its calls.
+          <img class="textimg" src="../img/bot-epic-land.png" width="320px" height="auto">
+            My bot's success lies in my application of in-depth analysis and planning before writing any code, and the ruthless patching of bugs and discrepancies after writing code. BEEP-X had perfected weapon-centered heuristic functions that were the result of analysing each of the four available weapons (in terms of range, ammo, speed, firing angle). I played the game myself and devised the best strategies (camping pickups, rushing centre to get kills faster, healing at appropriate times, avoiding movements while shooting the beam weapon) and then implemented these strategies as behaviour to the best of my abilities. I used behaviour trees to my advantage by splitting its root into movement and shooting selectors that are run in parallel, so the bot could perform movement patterns and shooting behaviour simultaneously. 
+            <br><br>
+            Creating this bot took me under two weeks and I fit its artificial brain in 500 lines of well-documented code and 7 key behaviours. I also submitted my code a week early. Overall, it was a fun experience to challenge myself and learn about behaviour trees and artificial decision making.
       </div>
-  </div>
-    
-  <div class="d-flex justify-content-center align-items-center flex-grow-1 projectgap" id="Mech-Tournament">
-    <span class="d-block title-colour h3" id="Mech-Tournament">Mech AI Tournament Champion</span>
-  </div>
-    <div class="d-flex justify-content-center align-items-center flex-grow-1">
-      <div class="text text-large d-flex flex-column justify-content-center align-items-center">
-          <div class="image-table">
-              <img class="textimg" src="img/bot-epic.png" width="360px" height="auto">
-              <iframe class="textimg" width="320" height="180" src="https://www.youtube.com/embed/ir_fWFE7Hyw?start=3132" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <img class="textimg" src="img/bot-win-screen.png" width="325px" height="auto">
-          </div>
-          <div class="text data_more_less">
-            <div class="data_more_less_inner" data-height="240" data-increase-by="2000">
-            <div class="data_more_less_body">
-                My "AI for Games" class of Semester 1 2020 ran a Mech AI tournament that I won.
-                <br><br>
-                This tournament involved using behaviour trees via PandaBT in Unity to run in-script behaviours programmed in C#. 
-                We were only able to change the robot's decisions, not their physical abilities. Our behaviour scripts were then attached to Mech prefabs and pitched against each other in a round-based tournament. 
-                <br><br>
-                There were 24 participants from our class, and I made it to the semi-finals, then
-                to the finals, and won the finals. My AI bot also beat the top 3 champions 
-                from 2019 in a bonus round.
-                <br><br>
-                My bot's success lies in my application of in-depth analysis and planning before writing any code, and the ruthless patching of bugs and discrepancies after writing code. BEEP-X had perfected weapon-centered heuristic functions that were the result of analysing each of the four available weapons (in terms of range, ammo, speed, firing angle). I played the game myself and devised the best strategies (camping pickups, rushing centre to get kills faster, healing at appropriate times, avoiding movements while shooting the beam weapon) and then implemented these strategies as behaviour to the best of my abilities. I used behaviour trees to my advantage by splitting its root into movement and shooting selectors that are run in parallel, so the bot could perform movement patterns and shooting behaviour simultaneously. 
-                <br><br>
-                Creating this bot took me under two weeks and I fit its artificial brain in 500 lines of well-documented code and 7 key behaviours. I also submitted my code a week early. Overall, it was a fun experience to challenge myself and learn about behaviour trees and artificial decision making. 
-                </div>
-                </div>
-                <a href="#" class="action_more more_less_action btn">Continue Reading</a>
-                <a href="#" class="action_less more_less_action btn">Show Less</a>
-          </div>
-      </div>
-  </div>
+    </div>
     
 </section>
     
