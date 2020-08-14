@@ -344,6 +344,10 @@ a {
     padding: 10px;
 }
 
+.h5 {
+    font-size: 1.2rem;
+}
+
 .h1padding {
     padding-bottom: 200px;
 }
@@ -485,6 +489,12 @@ body {
     margin-bottom: 0;
 }
 
+/* Resume */
+
+.resume {
+    border: 3px solid var(--bg-main);
+    box-shadow: 2px 6px 8px var(--bg-main);
+}
 
 /* BG IMG - UNUSED */
 
@@ -912,8 +922,8 @@ a:hover .overlay {
 
 #socials-bottom {
     position: absolute;
-    right: 2%;
-    top: 57%;
+    right: 3%;
+    top: 48%;
     padding: 0;
     margin: 20px 10px;
     text-align: center;
@@ -921,7 +931,7 @@ a:hover .overlay {
 
 #socials-bottomleft {
     position: absolute;
-    left: 2%;
+    left: 3%;
     top: 84%;
     padding: 0;
     margin: 20px 10px;
@@ -1128,5 +1138,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     }
     .chart-holder {
         width: 100%;
+    }
+    .scroll-down {
+        visibility: hidden;
     }
 }
