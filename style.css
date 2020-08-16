@@ -224,11 +224,11 @@ ul.arrow li::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 1.3vh;
-    height: 1vh;
-    width: 1vh;
+    top: 1.1vh;
+    height: 1.2vh;
+    width: 1.2vh;
     border: 1px solid var(--title-text);
-    border-width: 3px 3px 0 0;
+    border-width: 4px 4px 0 0;
     transform: rotate(45deg);
 }
 
@@ -404,7 +404,7 @@ ul.arrow li::before {
 
 .smalltext {
     font-size: 0.9rem;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .text-large {
@@ -584,11 +584,11 @@ body {
     transition: width 1s ease-out;
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(1)::before {
-    width: calc(80% - var(--skills-width));
+    width: calc(82% - var(--skills-width));
     transition-delay: var(--transition-delay);
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(2)::before {
-    width: calc(76% - var(--skills-width));
+    width: calc(75% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step));
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(3)::before {
@@ -681,7 +681,7 @@ body {
 }
 
 .gameimg-column-third {
-    flex: 33%;
+    flex: 50%;
     padding: 0 7px;
 }
 
@@ -700,6 +700,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 456px;
+    padding: 5px;
 }
 
 .gameimg-container img,
@@ -1131,7 +1132,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
         width: 30px;
         height: 30px;
     }
-    .gameimg-column-third {
+    .gameimg-column-half {
         flex-basis: 100%;
     }
     .gameimg-column {
@@ -1171,4 +1172,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     .scroll-down {
         visibility: hidden;
     }
+    .text-list-margin {
+    margin-left: 10%;
+}
 }
