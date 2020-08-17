@@ -700,7 +700,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 456px;
-    padding: 5px;
+    margin: 5px;
 }
 
 .gameimg-container img,
@@ -710,7 +710,7 @@ body {
     margin-right: auto;
     height: auto;
     border: 2px solid var(--bg-main);
-    box-shadow: 1px 3px 6px var(--bg-main);
+    box-shadow: 1px 5px 6px var(--bg-main);
 }
 
 .nobord img {
@@ -1174,5 +1174,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     }
     .text-list-margin {
     margin-left: 10%;
-}
+    }
 }
