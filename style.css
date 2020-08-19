@@ -871,16 +871,17 @@ body {
 }
 
 .overlay {
-  background: rgba(0,0,0,0.6);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  transition: all 0.4s ease-in-out 0s;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    margin-top: 1px;
 }
 
 .gameimg-container .overlay {
@@ -905,9 +906,9 @@ a:hover .overlay {
 }
 
 .overlay-outer:hover .content-details {
-  top: 50%;
-  left: 50%;
-  opacity: 1;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
 }
 
 .content-details h5 {
@@ -1119,6 +1120,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     .gameimglarge-container .overlay {
         opacity: 0.4;
     }
+   .gameimg-container .content-text {
+        visibility: hidden;
+    }
+    .gameimg-container .content-details {
+        bottom: 60%;
+        left: 50%;
+    }
     .text-list li { 
         padding-bottom: 8px;
     }
@@ -1179,6 +1187,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
         visibility: hidden;
     }
     .text-list-margin {
-    margin-left: 10%;
+        margin-left: 10%;
     }
 }
