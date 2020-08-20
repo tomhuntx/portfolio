@@ -311,11 +311,11 @@ ul.arrow li::before {
 
 .frontimg {
     position: absolute;
-    left: 7%;
-    top: 31vh;
+    left: 12%;
+    top: 41vh;
     padding: 7px;
     z-index: 10;
-    height: 70vh;
+    height: 60vh;
     width: auto;
 }
 
@@ -1077,11 +1077,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     }
     .frontimg {
         position: absolute;
-        left: 0;
-        top: 51vh;
+        left: 2%;
+        top: 56vh;
         padding: 7px;
         z-index: 10;
-        height: 50vh;
+        height: 45vh;
         width: auto;
     }
     .text {
