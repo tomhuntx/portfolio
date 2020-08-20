@@ -1077,7 +1077,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     }
     .frontimg {
         position: absolute;
-        left: 6%;
+        left: 0;
         top: 51vh;
         padding: 7px;
         z-index: 10;
