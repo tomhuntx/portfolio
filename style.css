@@ -138,7 +138,7 @@ a {
 }
 
 .vh-27 {
-    height: 27vh;
+    height: 30vh;
 }
 
 .h-20 {
@@ -147,6 +147,10 @@ a {
 
 .vh-main {
     height: auto;
+}
+
+.notmain {
+    padding-top: 35px;
 }
 
 .text-cont {

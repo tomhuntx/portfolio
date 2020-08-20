@@ -185,18 +185,6 @@
     
     function scrollHandler() {
       
-      // If first chart is in view - or webkit won't work, display chart animation
-      if (isElementInViewport(chartWrapper, 150) || wontWork) chartWrapper.classList.add("in-view");
-      else chartWrapper.classList.remove("in-view");
-      
-      // If second chart is in view - or webkit won't work, display chart animation
-      if (isElementInViewport(chartWrapper2, 150) || wontWork) chartWrapper2.classList.add("in-view");
-      else chartWrapper2.classList.remove("in-view");
-        
-      // If second chart is in view - or webkit won't work, display chart animation
-      if (isElementInViewport(chartWrapper2, 150) || wontWork) chartWrapper2.classList.add("in-view");
-      else chartWrapper2.classList.remove("in-view");
-        
       // If home screen is in view
       if (!isElementInViewport(homeScreen, 1)) nav.classList.add("shadow");
       else nav.classList.remove("shadow");
