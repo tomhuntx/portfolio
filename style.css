@@ -594,7 +594,7 @@ body {
     transition: width 1s ease-out;
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(1)::before {
-    width: calc(82% - var(--skills-width));
+    width: calc(80% - var(--skills-width));
     transition-delay: var(--transition-delay);
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(2)::before {
