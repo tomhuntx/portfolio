@@ -1,0 +1,30 @@
+black:
+#0B0C10
+grey:
+#1F2833
+light-grey:
+#C5C6C7
+aqua:
+#66FCF1
+dark-aqua:
+#45A29E
+purp:
+#8400d6
+blue:
+#009dff
+
+VS
+
+
+blue (change): #4EBF9F
+
+orange: #F29829
+
+beige white: #F2E2CE
+
+dark red: #730C02
+
+black: #0D0D0D
+
+darl grey: #333333
+

@@ -41,7 +41,7 @@
 </header>
 <section class="d-flex justify-content-center align-items-center vh-27 bg-main nav-detach-point">
   <h1 class="text-center h12 notmain">Project
-    <span class="d-block subtitle-colour h3">Project Laserhand<span class="blinker"></span></span>
+    <span class="d-block subtitle-colour h3">Laserhand<span class="blinker"></span></span>
   </h1> 
 </section>
     
@@ -51,28 +51,29 @@
   
     <div class="d-flex justify-content-center align-items-center flex-grow-1 tinygap">
         <div class="text text-center">
-          <span class="b h5">Project Laserhand</span> is the temporary name for my majour project of IGB400. Please read more about it in my devblog.
+          <span class="b h5">LASERHAND</span> is my first published solo project, and my favourite piece of my portfolio. It was made in Unreal Engine 4 within 8 weeks for Android and Windows. I had no exterior guidance or help in its development apart from playtests that I ran.  
             
-             <div class="button-container tinygap">
-                <a class="button -blue center" href="../projects.html">Back to Projects</a>
-             </div>
+          <div class="button-container tinygap">
+            <a class="button -blue" href="https://play.google.com/store/apps/details?id=com.TomHunterx.Laserhand" target="_blank">Google Play</a>
+            <a class="button -blue" href="https://tom-hunter.itch.io/laserhand" target="_blank">Itch.io</a>
+          </div>
         </div>
     </div>
     
-    <!--
     <div class="d-flex justify-content-center align-items-center flex-grow-1 tinygap">
-        <span class="d-block title-colour h3">Gameplay</span>
+        <span class="d-block title-colour h3">Trailer</span>
     </div>
     <div class="d-flex justify-content-center align-items-center flex-grow-1 tinygap">
-        <iframe width="480" height="270" src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/PxqgSsoH1_c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-
-    <div class="d-flex justify-content-center align-items-center flex-grow-1 textgap">
-        <span class="d-block title-colour h3 tinygap">My Role</span>
+    
+     <div class="d-flex justify-content-center align-items-center flex-grow-1 textgap">
+        <span class="d-block title-colour h3 tinygap">Description</span>
     </div>
+    
     <div class="d-flex justify-content-center align-items-center flex-grow-1">
       <div class="text">
-          Placeholder Text
+         LASERHAND is a 3D tilt-controlled first-person-shooter where you play as a laser-based being and fight waves of deadly robot drones with your trusty laser-firing laser-hand. You better shoot fast and watch your back, though. The drones keep coming faster, and keep getting stronger. The aim is to last as long as possible and take as many drones down with you as you can.
       </div>
     </div>
     
@@ -80,17 +81,54 @@
         <span class="d-block title-colour h3">Game Summary</span>
     </div>
     <div class="d-flex justify-content-center align-items-center flex-grow-1">
+      <div class="text text-large">
+          <img class="textimg" src="../img/laserhand2.jpg" width="400px" height="auto">
+          Laserhand plays as a score-based shooter where enemies progressively spawn faster and ramp up in difficulty over time. Destroying enemies awards points, and enemies can damage and destroy the player to force them to quit or restart. 
+          <br><br>
+          There is a highscore for each of the three difficulties that is saved to the user's device, where they are challenged to beat their highscores and compare them to their friends. There are three enemy types: Drone, Drone Swarm, and Drone Boss. There are three power-ups that provide temporary bonuses: Slow-Mo, Rapid-Fire, and Healing. Spawning patterns involve spawning enemies and power-ups at random positions around the player, and increasing the rate of spawning over time, as well as introducing powerups and more challenging enemies after certain time intervals. There are also spawn pauses to prevent multiple bosses or powerups from being spawned after one another. 
+          <br><br>
+          Laserhand is installable on both Android and Windows devices, where it is controlled with either tilt controls which act much like VR or with the mouse on PC.
+      </div>
+    </div>
+    
+    <div class="d-flex justify-content-center align-items-center flex-grow-1 textgap">
+        <span class="d-block title-colour h3 tinygap">Devlopment Process</span>
+    </div>
+    <div class="d-flex justify-content-center align-items-center flex-grow-1">
       <div class="text">
-          Placeholder Text
+          Laserhand was an assignment for one of my classes in my final semester, where they essentially said "make something that benefits your portfolio as much as possible" so I made Laserhand to develop and showcase experience in Unreal, C++, Blueprints, mobile development, and publishing. The design decision to use tilt controls was also intended to provide some VR experience, as this is an industry I am very much interested in, where I aimed to allow people to have a VR experience without a needing a VR headset.
+          <br><br>
+          I tracked the development of Laserhand via weekly sprints and managed content to implement via Trello. I developed Laserhand in much of my free time, and thus went above and beyond what was required for the assignment. 
+          <br><br>
+          A major focus for me with this project was to force myself to learn and get familar with C++ instead of relying on Blueprints. The core classes in the game including the enemy spawning, game management, player controller, projectiles, and the enemies were all programmed in C++ and built upon as Blueprints to create the different types of enemies, projectiles, and even a second spawning system. 
+          <br><br>
+          All assets used were custom or adapted from Unreal starter content apart from sound effects, which are referenced in-game.
+          <br><br>
+          Content I developed:
+          <ul class="text-list smalltext text-list-margin tinygap">
+              <li>Custom player hand and two enemy types (modelled in Maya).</li>
+              <li>Menu screens (main, settings, play, pause, death).</li>
+              <li>Enemy and powerup spawning system.</li>
+              <li>Enemy behaviour tree AI.</li>
+              <li>Three difficulty levels.</li>
+              <li>Highscore save data system.</li>
+              <li>Animated player UI.</li>
+              <li>Combo system.</li>
+              <li>180 degree mode.</li>
+              <li>Directional hit indicators.</li>
+              <li>Custom laser projectiles.</li>
+              <li>Hit &amp; destroy particles.</li>
+              <li>Custom emissive materials.</li>
+              <li>Adjustable volume.</li>
+              <li>Directional audio.</li>
+              <li>Simultaneous Windows and Android compatibility.</li>
+          </ul>  
       </div>
     </div>
     <div class="button-container tinygap">
         <a class="button -blue center" href="../projects.html">Back to Projects</a>
     </div>
-    -->
-    
     <div class="textgap"></div>
-    <div class="largegap"></div>
 </section>
     
 <!-- Contact -->
