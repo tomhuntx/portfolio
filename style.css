@@ -8,7 +8,7 @@
     --subtitle-text: #5ecdff;
     --text: white;
 
-    --bg-main: #26292c; 
+    --bg-main: #232629; 
     --bg-sub: #33354d;
     --links: #bfeeff;
     
@@ -179,7 +179,7 @@ a {
 }
 
 .text-white {
-    color: #aaabb8;
+    color: #e1e2ed;
 }
 
 .subtitle-colour {
@@ -188,6 +188,10 @@ a {
 
 .title-colour {
     color: var(--subtitle-text);
+}
+
+.blue {
+    color: var(--blue);
 }
 
 .text-links {
@@ -602,7 +606,7 @@ body {
 
 .chart-wrapper .chart-skills li::before {
     width: 0;
-    background: var(--blue);
+    background: #0090f0;
     z-index: 5;
     transition: width 1s ease-out;
 }
@@ -877,7 +881,7 @@ body {
 }
 .button.-blue {
     color: white;
-    background: var(--title-text);
+    background: #0071bd;
 }
 
 /* Image overlay by C U on codepen: https://codepen.io/-cu-/pen/gOaKNbM */
