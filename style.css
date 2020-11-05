@@ -4,16 +4,17 @@
 /* All */
 
 :root {
-    --title-text: #f7b15c;
-    --subtitle-text: #ffdeb5;
+    --title-text: #1a79ed;
+    --subtitle-text: #5ecdff;
     --text: white;
 
-    --bg-main: #1d253d;
-    --bg-sub: #2b3a5c;
-    --links: #ffe0ba;
+    --bg-main: #26292c; 
+    --bg-sub: #33354d;
+    --links: #bfeeff;
     
     --nav: white;
-    --nav-hover: #ffdeb5;
+    --nav-hover: #b3f2ff;
+    --nav-here: #5ecdff;
     
     --blue: #0090f0;
     --orange: #F29829;
@@ -113,7 +114,7 @@ a {
 }
 
 #nav-here {
-    color: #F2B66D;
+    color: var(--nav-here);
 }
 
 .align-items-center {
@@ -186,7 +187,7 @@ a {
 }
 
 .title-colour {
-    color: var(--title-text);
+    color: var(--subtitle-text);
 }
 
 .text-links {
@@ -232,11 +233,11 @@ ul.arrow li::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 1.1vh;
-    height: 1.2vh;
-    width: 1.2vh;
-    border: 1px solid var(--title-text);
-    border-width: 4px 4px 0 0;
+    top: 1.05vh;
+    height: 1.3vh;
+    width: 1.3vh;
+    border: 1px solid var(--blue);
+    border-width: 5px 5px 0 0;
     transform: rotate(45deg);
 }
 
@@ -351,14 +352,14 @@ ul.arrow li::before {
 
 .h1 {
     font: 1rem/1.2 "Hind Guntur", sans-serif;
-    font-size: 3.4rem;
+    font-size: 3.5rem;
     font-weight: 500;
     color: var(--title-text);
 }
 
 .h12 {
     font: 1rem/1.2 "Hind Guntur", sans-serif;
-    font-size: 3.1rem;
+    font-size: 3.2rem;
     font-weight: 500;
     color: var(--title-text);
 }
@@ -371,7 +372,7 @@ ul.arrow li::before {
 .h3 {
     font: 1rem/1.2 "Hind Guntur", sans-serif;
     font-size: 2rem;
-    line-height: 0.9;
+    line-height: 1.1;
 }
 
 .h4 {
@@ -445,7 +446,6 @@ ul.arrow li::before {
 
 .text-experience {
     font-size: 1.3rem;
-    color: var(--links);
 }
 
 .b {
@@ -489,6 +489,10 @@ body {
     padding-left: 10px;
 }
 
+.page-header .logo:hover {
+    color: var(--nav-hover);
+}
+
 .page-header li:not(:last-child) {
     margin-right: 15px;
 }
@@ -505,7 +509,7 @@ body {
     transform: translateX(-50%);
     text-transform: uppercase;
     transition: all 0.5s;
-    color: var(--title-text);
+    color: var(--nav);
 }
 
 .scroll-down.is-hidden {
@@ -519,7 +523,7 @@ body {
     margin: 12px auto 0;
     width: 1.5px;
     height: 32px;
-    background: var(--title-text);
+    background: var(--nav);
     transform-origin: bottom;
     animation: pulse 1s infinite linear;
 }
@@ -873,7 +877,7 @@ body {
 }
 .button.-blue {
     color: white;
-    background: #0076c4;
+    background: var(--title-text);
 }
 
 /* Image overlay by C U on codepen: https://codepen.io/-cu-/pen/gOaKNbM */
