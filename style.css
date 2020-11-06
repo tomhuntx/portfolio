@@ -1084,7 +1084,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 /* MQ */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 980px) {
     .bg-img {
         display: none;
     }
@@ -1151,6 +1151,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     .text-list li { 
         padding-bottom: 8px;
     }
+        .gameimglarge-container {
+        position: relative;
+        width: 99%;
+        align-self: center;
+            max-width: 1000px;
+    }
+        .gameimg-column-half {
+            
+        padding-left: 15%;
+        padding-right: 15%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1169,6 +1180,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     }
     .gameimg-column-half {
         flex-basis: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
     .gameimg-column {
         flex-direction: column;
@@ -1180,7 +1193,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     }
     .gameimglarge-container {
         position: relative;
-        width: 100%;
+        width: 98%;
     }
     .gameimg-column-third:first-of-type {
         margin-bottom: 10px;
