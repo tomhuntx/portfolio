@@ -10,11 +10,11 @@
 
     --bg-main: #232629; 
     --bg-sub: #33354d;
-    --links: #bfeeff;
+    --links: #b940ff;
     
     --nav: white;
-    --nav-hover: #b3f2ff;
-    --nav-here: #5ecdff;
+    --nav-hover: #5ecdff;
+    --nav-here: #1a79ed;
     
     --blue: #0090f0;
     --orange: #F29829;
@@ -410,7 +410,7 @@ ul.arrow li::before {
 }
 
 .text-half {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 450px;
     padding: 5px 20px;
     line-height: 1.3;
@@ -1040,8 +1040,8 @@ a:hover .overlay {
 .less_active .action_less {display: inline-block;}
 .less_active .action_more {display: none;}
 .data_more_less:not(.less_active):not(.action_disabled) .data_more_less_inner:after {content: ''; display: block; position: absolute; bottom: 0; left: 0; width: 100%; background: -moz-linear-gradient(top, rgba(43, 58, 92,0) 0%, rgba(43, 58, 92,1) 100%);
-background: -webkit-linear-gradient(top, rgba(47, 56, 77,0) 0%,rgba(47, 56, 77,1) 100%);
-background: linear-gradient(to bottom, rgba(43, 58, 92,0) 0%,rgba(43, 58, 92,1) 100%);
+background: -webkit-linear-gradient(top, rgba(51, 53, 77,0) 0%,rgba(51, 53, 77,1) 100%);
+background: linear-gradient(to bottom, rgba(51, 53, 77,0) 0%,rgba(51, 53, 77,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); height: 80px;}
 .data_more_less.action_disabled .more_less_action {display: none;}
 .btn {color: var(--subtitle-text); text-decoration: none; padding: 0px 15px;}
