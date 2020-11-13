@@ -8,7 +8,7 @@
     --subtitle-text: #5ecdff;
     --text: white;
 
-    --bg-main: #232629; 
+    --bg-main: #1e2124; 
     --bg-sub: #33354d;
     --links: #bf4fff;
     
@@ -179,7 +179,7 @@ a {
 }
 
 .text-white {
-    color: #e1e2ed;
+    color: #f2f2f2;
 }
 
 .subtitle-colour {
@@ -1116,7 +1116,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
         height: 225px;
     }
     .text-half {
-        width: 95%;
+        width: 99%;
     }
     .text-half .text-small {
         padding: 0px 20px 0px 20px;
