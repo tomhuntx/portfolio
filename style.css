@@ -865,6 +865,11 @@ body {
     box-shadow: 2px 5px 10px var(--bg-main);
 }
 
+.button-long {
+    padding: 14px 120px;
+    font-size: 12px;
+}
+
 .button:hover {
     transition: all 150ms linear;
     opacity: .75;
@@ -882,6 +887,10 @@ body {
 .button.-blue {
     color: white;
     background: #0071bd;
+}
+.button.-black {
+    color: black;
+    background: #e8e8e8;
 }
 
 /* Image overlay by C U on codepen: https://codepen.io/-cu-/pen/gOaKNbM */
@@ -1208,6 +1217,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     }
     .button {
         padding: 10px 2px;
+        font-size: 12px;
+    }
+    .button-long {
+        padding: 12px 100px;
         font-size: 12px;
     }
     .textimg, .textimgr {
