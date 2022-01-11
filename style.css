@@ -611,19 +611,19 @@ body {
     transition: width 1s ease-out;
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(1)::before {
-    width: calc(81% - var(--skills-width));
+    width: calc(90% - var(--skills-width));
     transition-delay: var(--transition-delay);
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(2)::before {
-    width: calc(78% - var(--skills-width));
+    width: calc(80% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step));
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(3)::before {
-    width: calc(68% - var(--skills-width));
+    width: calc(75% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 2);
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(4)::before {
-    width: calc(60% - var(--skills-width));
+    width: calc(63% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 3);
 }
 .chart-wrapper.in-view .chart-skills li:nth-child(5)::before {
@@ -640,11 +640,11 @@ body {
     transition: width 1.5s ease-out;
 }
 .chart-wrapper.in-view .chart-skills2 li:nth-child(1)::before {
-    width: calc(84% - var(--skills-width));
+    width: calc(91% - var(--skills-width));
     transition-delay: var(--transition-delay);
 }
 .chart-wrapper.in-view .chart-skills2 li:nth-child(2)::before {
-    width: calc(80% - var(--skills-width));
+    width: calc(83% - var(--skills-width));
     transition-delay: var(--transition-delay);
 }
 .chart-wrapper.in-view .chart-skills2 li:nth-child(3)::before {
@@ -652,11 +652,11 @@ body {
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step));
 }
 .chart-wrapper.in-view .chart-skills2 li:nth-child(4)::before {
-    width: calc(68% - var(--skills-width));
+    width: calc(71% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 2);
 }
 .chart-wrapper.in-view .chart-skills2 li:nth-child(5)::before {
-    width: calc(62% - var(--skills-width));
+    width: calc(66% - var(--skills-width));
     transition-delay: calc( var(--transition-delay) + var(--transition-delay-step) * 3);
 }
 
