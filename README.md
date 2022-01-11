@@ -1,2 +1,2 @@
-# portfolio
-Portfolio Website for Tom Hunter
+# My Web Portfolio
+A portfolio Website for Tom Hunter (duh)
