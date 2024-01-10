@@ -11,3 +11,22 @@
     padding: 10px;
     text-align: center;
 }
+
+.circle-gradient {
+    position: absolute;
+    top: -20%;
+    left: 10%;
+    background: radial-gradient(transparent 65%, white 60%, transparent 70%);
+    pointer-events: none;
+
+    width: 80%;
+    aspect-ratio: 1/1;
+}
+
+// movile (WIP)
+// @media only screen and (max-width: 600px) {
+//     .circle-gradient {
+//       height: 300px;
+//       width: 300px;
+//     }
+//   }

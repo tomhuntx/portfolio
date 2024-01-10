@@ -8,7 +8,7 @@ import { TitleCardComponent } from './title-card/title-card.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TitleCardComponent
+    TitleCardComponent,
   ],
   imports: [
     BrowserModule,
