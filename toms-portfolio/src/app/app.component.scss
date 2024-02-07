@@ -3,6 +3,7 @@
     width: 50%;
     padding: 10px;
     text-align: center;
+    font-size: 32px;
 }
 
 .wip-text {
@@ -14,7 +15,13 @@
 
 .circle-gradient {
     position: absolute;
-    background: radial-gradient(transparent 65%, white 60%, transparent 70%);
+    background: radial-gradient(transparent 65%, #a2b3fc 69.5%, transparent 70%);
+    
+    // note use the following for selecting circle icons 
+    //background: radial-gradient(transparent 55%, #a2b3fc 69.5%, transparent 70%);
+
+    //k's favbackground: radial-gradient(transparent 65%, #a2b3fc 69%, transparent 70%);
+    //old - background: radial-gradient(transparent 65%, #a2b3fc 60%, transparent 70%);
     pointer-events: none;
     width: 65%;
     aspect-ratio: 1 / 1;
@@ -23,10 +30,8 @@
     margin: auto;
 }
 
-// movile (WIP)
+// mobile TODO
 // @media only screen and (max-width: 600px) {
 //     .circle-gradient {
-//       height: 300px;
-//       width: 300px;
 //     }
 //   }
