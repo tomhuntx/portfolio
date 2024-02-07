@@ -14,13 +14,13 @@
 
 .circle-gradient {
     position: absolute;
-    top: -20%;
-    left: 10%;
     background: radial-gradient(transparent 65%, white 60%, transparent 70%);
     pointer-events: none;
-
-    width: 80%;
-    aspect-ratio: 1/1;
+    width: 65%;
+    aspect-ratio: 1 / 1;
+    left: 19%;
+    top: -15%;
+    margin: auto;
 }
 
 // movile (WIP)
