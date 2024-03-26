@@ -16,18 +16,19 @@
 .circle-gradient {
     position: absolute;
     background: radial-gradient(transparent 65%, #a2b3fc 69.5%, transparent 70%);
-    
-    // note use the following for selecting circle icons 
-    //background: radial-gradient(transparent 55%, #a2b3fc 69.5%, transparent 70%);
-
-    //k's favbackground: radial-gradient(transparent 65%, #a2b3fc 69%, transparent 70%);
-    //old - background: radial-gradient(transparent 65%, #a2b3fc 60%, transparent 70%);
     pointer-events: none;
     width: 65%;
     aspect-ratio: 1 / 1;
     left: 19%;
     top: -15%;
     margin: auto;
+    animation: animateCircle 5s infinite alternate;
+}
+
+@keyframes animateCircle {
+    to {
+        background-position:top left;
+    }
 }
 
 // mobile TODO
