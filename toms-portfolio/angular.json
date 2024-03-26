@@ -33,7 +33,8 @@
               { "glob": "index.html", "input": "src/legacy/", "output": "/home/" }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
             "scripts": []
           },
