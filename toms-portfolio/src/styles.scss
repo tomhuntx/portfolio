@@ -7,7 +7,9 @@ html, body
     overflow: hidden;
 }
 
-/* All */
+
+
+/* Legacy from this point onwards */
 
 :root {
     --title-text: #1b7df5;
@@ -386,7 +388,7 @@ ul.arrow li::before {
 }
 
 .h1padding {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .text {
