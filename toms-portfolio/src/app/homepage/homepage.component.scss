@@ -11,8 +11,11 @@
     text-align: center;
 
     a {
-        margin: 5px;
-        font-size: 25px;
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
         color: var(--title-text);
+        width: 60px;
+        height: 60px;
     }
 }
