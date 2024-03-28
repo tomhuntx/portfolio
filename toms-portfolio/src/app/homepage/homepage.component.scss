@@ -3,12 +3,23 @@
 }
 
 .socials {
-    position: absolute;
-    right: 3%;
-    top: 84%;
-    padding: 0;
-    margin: 20px 20px;
-    text-align: center;
+    &.right {
+        position: absolute;
+        right: 3%;
+        top: 84%;
+        padding: 0;
+        margin: 20px 20px;
+        text-align: center;
+    }
+
+    &.left {
+        position: absolute;
+        left: 5%;
+        top: 84%;
+        padding: 0;
+        margin: 20px 20px;
+        text-align: center;
+    }
 
     a {
         display: inline-block;
