@@ -455,6 +455,10 @@ body {
     color: var(--nav-hover);
 }
 
+#nav-here {
+    color: var(--nav-here);
+}
+
 .page-header li:not(:last-child) {
     margin-right: 15px;
 }
