@@ -25,7 +25,6 @@
         display: inline-block;
         position: relative;
         font-size: 30px;
-        color: var(--text);
         width: 60px;
         height: 60px;
     }
@@ -37,15 +36,25 @@
     a:active {
         color: var(--primary);
     }
+
+    &.legacy a {
+        color: var(--disabled);
+        &:hover {
+            opacity: 0.8;
+        }
+        &:active {
+            opacity: 0.6;
+        }
+    }
 }
 
 .socials-tooltip  {
     .tooltip-inner {
-        width: auto;
         height: auto;
         border: 2px solid var(--secondary);
         padding: 10px;
         margin-bottom: 20px;
+        width: 180px;
     }
     &::after {
         content: "";
