@@ -12,9 +12,15 @@ html, body
 /* Legacy from this point onwards */
 
 :root {
+    // New colours
+    --primary: #1b7df5;
+    --secondary: #5eccff;
+    --text: white;
+
+    // Legacy colours
+
     --title-text: #1b7df5;
     --subtitle-text: #5eccff;
-    --text: white;
 
     --bg-main: #1e2124; 
     --bg-sub: #33354d;
@@ -467,4 +473,23 @@ body {
     font-size: 1.1rem;
     padding: 0;
     margin: 0;
+}
+
+.blinker { 
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1,0,0,1);
+  animation-duration: 1s;
+  display: inline-block;
+  width: 0.1rem;
+  height: 1.85rem;
+  margin-left: 2px;
+  margin-bottom: -3px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(white,.3);
+  background: white;
+}
+
+@keyframes blinker { 
+  from { opacity: 1.0; } to { opacity: 0.0; }
 }
