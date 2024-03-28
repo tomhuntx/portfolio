@@ -10,11 +10,11 @@ import { HomepageComponent } from './homepage/homepage.component';
   declarations: [
     AppComponent,
     TitleCardComponent,
-    HomepageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HomepageComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
