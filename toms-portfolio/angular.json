@@ -110,5 +110,7 @@
       }
     }
   },
-  "defaultProject": "toms-portfolio"
+  "cli": {
+    "analytics": false
+  }
 }
