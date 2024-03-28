@@ -9,12 +9,12 @@ import { HomepageComponent } from './homepage/homepage.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TitleCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HomepageComponent,
+    TitleCardComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
