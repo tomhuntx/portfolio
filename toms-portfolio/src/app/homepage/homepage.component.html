@@ -1,8 +1,8 @@
 
 <header class="position-fixed bg-main page-header">
-  <nav class="d-flex justify-content-center">
+  <nav class="flex justify-content-center">
     <a href="" class="logo bold flex-1" id="nav-here"><p>TH</p></a>
-    <ul class="nav-list d-flex no-list">
+    <ul class="nav-list flex no-list">
       <li><a href="assets/legacy/about.html">About</a></li>
       <li><a href="assets/legacy/projects.html">Projects</a></li>
       <li><a href="assets/legacy/resume.html">Resume</a></li>
@@ -12,35 +12,46 @@
     </ul>
   </nav>
 </header>
-<section class="d-flex justify-content-center align-items-center vh-100 bg-main nav-detach-point flex-column">
+<section class="flex justify-content-center align-items-center vh-100 bg-main flex-column">
+  <div class="title-card">
+    <div class="row text hello">
+      Hi there, I'm
+    </div>
     <div class="row">
-        <h1 class="text-center h1 h1padding">Tom Hunter
-            <span class="d-block subtitle-colour h3">Full-Stack Software Developer<span class="blinker"></span></span>
-        </h1>
+      <h1>Tom Hunter,</h1>
     </div>
-    <div class="socials right">
-        <app-nav-button
-          [icon]="'bi-linkedin'"
-          [tooltip]="'View my LinkedIn profile'"
-          [url]="'https://www.linkedin.com/in/tom-w-hunter/'"
-        ></app-nav-button>
-        <app-nav-button
-          [icon]="'bi-envelope-at-fill'"
-          [tooltip]="'Send me an email'"
-          [url]="'mailto:tomhunter.dev@gmail.com'"
-        ></app-nav-button>
-        <app-nav-button
-          [icon]="'bi-file-earmark-arrow-down-fill'"
-          [tooltip]="'View my resume'"
-          [url]="'assets/documents/Tom Hunter\'s Resume.pdf'"
-        ></app-nav-button>
+    <div class="row">
+      <h3><i class="bi-stack"></i>&ensp;Full-Stack Software Developer.</h3>
     </div>
-    <div class="socials left legacy">
+    <div class="row text description">
+      I'm a practiced professional of building digital experiences.
+      I specialise in developing effective, secure, user-friendly apps.
+    </div>
+  </div>
+    
+  <div class="socials right">
       <app-nav-button
-        [icon]="'bi-archive-fill legacy-col'"
-        [tooltip]="'View my legacy site'"
-        [url]="'assets/legacy/index.html'"
+        [icon]="'bi-linkedin'"
+        [tooltip]="'View my LinkedIn profile'"
+        [url]="'https://www.linkedin.com/in/tom-w-hunter/'"
       ></app-nav-button>
-    </div>
+      <app-nav-button
+        [icon]="'bi-envelope-at-fill'"
+        [tooltip]="'Send me an email'"
+        [url]="'mailto:tomhunter.dev@gmail.com'"
+      ></app-nav-button>
+      <app-nav-button
+        [icon]="'bi-file-earmark-arrow-down-fill'"
+        [tooltip]="'View my resume'"
+        [url]="'assets/documents/Tom Hunter\'s Resume.pdf'"
+      ></app-nav-button>
+  </div>
+  <div class="socials left legacy">
+    <app-nav-button
+      [icon]="'bi-archive-fill legacy-col'"
+      [tooltip]="'View my legacy site'"
+      [url]="'assets/legacy/index.html'"
+    ></app-nav-button>
+  </div>
 </section>
     

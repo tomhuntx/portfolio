@@ -3,8 +3,42 @@ html, body
     height: 100%;
     width: 100%;
     background: #222238;
-    color: white;
     overflow: hidden;
+}
+
+h1 {
+    font: 1rem/1.2 "Hind Guntur", sans-serif;
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--primary);
+}
+
+h2 {
+    font: 1rem/1.2 "Hind Guntur", sans-serif;
+    font-size: 2.7rem;
+}
+
+h3 {
+    font: 1rem/1.2 "Hind Guntur", sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+h4 {
+    font: 1rem/1.2 "Lucida Console", Monaco, monospace;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+.text {
+    color: var(--text);
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 
@@ -72,7 +106,7 @@ a {
     display: block;
 }
 
-.d-flex {
+.flex {
     display: flex;
 }
 
@@ -317,53 +351,6 @@ a {
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-}
-
-.h1 {
-    font: 1rem/1.2 "Hind Guntur", sans-serif;
-    font-size: 3.5rem;
-    font-weight: 500;
-    color: var(--title-text);
-}
-
-.h12 {
-    font: 1rem/1.2 "Hind Guntur", sans-serif;
-    font-size: 3.2rem;
-    font-weight: 500;
-    color: var(--title-text);
-}
-
-.h2 {
-    font: 1rem/1.2 "Hind Guntur", sans-serif;
-    font-size: 2.7rem;
-}
-
-.h3 {
-    font: 1rem/1.2 "Hind Guntur", sans-serif;
-    font-size: 2rem;
-    line-height: 1.1;
-}
-
-.h4 {
-    font: 1rem/1.2 "Lucida Console", Monaco, monospace;
-    font-size: 1.3rem;
-    padding: 10px;
-}
-
-.h5 {
-    font-size: 1.2rem;
-}
-
-.h1padding {
-    padding-bottom: 100px;
-}
-
-.text {
-    color: var(--text);
-    font-size: 1.05rem;
-    width: 650px;
-    padding: 20px;
-    line-height: 1.4;
 }
 
 .text-blog {
