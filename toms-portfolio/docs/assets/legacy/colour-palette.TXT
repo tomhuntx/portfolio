@@ -1,0 +1,55 @@
+
+
+
+
+
+
+- OLD -
+
+    --title-text: #f7b15c;
+    --subtitle-text: #ffdeb5;
+    --text: white;
+
+    --bg-main: #1d253d;
+    --bg-sub: #2b3a5c;
+    --links: #ffe0ba;
+    
+    --nav: white;
+    --nav-hover: #ffdeb5;
+    
+    --blue: #0090f0;
+    --orange: #F29829;
+    --purple: #a200ff;
+    
+    --gray: #cbcfd3;
+    --white: #ffffff;
+    --black: #1a1a1a;
+    --lightwhite: whitesmoke;
+    --lightblue: #009dd3;
+    --peach: #ff9469;
+    --transition-delay: 0.3s;
+    --transition-delay-step: 0.3s;
+    --skills-width: 120px;
+
+black:
+#0B0C10
+grey:
+#1F2833
+light-grey:
+#C5C6C7
+aqua:
+#66FCF1
+dark-aqua:
+#45A29E
+purp:
+#8400d6
+blue:
+#009dff
+
+blue (change): #4EBF9F
+orange: #F29829
+beige white: #F2E2CE
+dark red: #730C02
+black: #0D0D0D
+darl grey: #333333
+
