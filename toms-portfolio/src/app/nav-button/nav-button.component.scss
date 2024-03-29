@@ -1,0 +1,42 @@
+a {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+a:active {
+    color: var(--primary);
+}
+
+.legacy a {
+    color: var(--legacy);
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.socials-tooltip  {
+    .tooltip-inner {
+        height: auto;
+        border: 2px solid var(--secondary);
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 180px;
+    }
+    &::after {
+        content: "";
+        border-width: 5px;
+        border-style: solid;
+        border-color: var(--text) transparent transparent transparent;
+    }
+}

@@ -19,43 +19,28 @@
         </h1>
     </div>
     <div class="socials right">
-        <!-- <a class="bi-github socials-btn" href="https://github.com/tomhuntx" target="_blank" title="My Github"></a> -->
-        <a 
-          class="bi-linkedin" 
-          href="https://www.linkedin.com/in/tom-w-hunter/" 
-          target="_blank"
-          placement="top"
-          ngbTooltip="View my LinkedIn profile" 
-          tooltipClass="socials-tooltip"
-        ></a>
-        <a 
-          class="bi-envelope-at-fill" 
-          href="mailto:tomhunter.dev@gmail.com" 
-          target="_blank" 
-          placement="top"
-          ngbTooltip="Send me an email" 
-          tooltipClass="socials-tooltip"
-        >
-        </a>
-        <a 
-          class="bi-file-earmark-arrow-down-fill" 
-          href="assets/documents/Tom Hunter's Resume.pdf" 
-          target="_blank" 
-          placement="top"
-          ngbTooltip="View my resume" 
-          tooltipClass="socials-tooltip"
-        >
-        </a>
+        <app-nav-button
+          [icon]="'bi-linkedin'"
+          [tooltip]="'View my LinkedIn profile'"
+          [url]="'https://www.linkedin.com/in/tom-w-hunter/'"
+        ></app-nav-button>
+        <app-nav-button
+          [icon]="'bi-envelope-at-fill'"
+          [tooltip]="'Send me an email'"
+          [url]="'mailto:tomhunter.dev@gmail.com'"
+        ></app-nav-button>
+        <app-nav-button
+          [icon]="'bi-file-earmark-arrow-down-fill'"
+          [tooltip]="'View my resume'"
+          [url]="'assets/documents/Tom Hunter\'s Resume.pdf'"
+        ></app-nav-button>
     </div>
     <div class="socials left legacy">
-      <a 
-        class="bi-archive-fill legacy-col" 
-        href="assets/legacy/index.html" 
-        placement="top"
-        ngbTooltip="View my legacy site" 
-        tooltipClass="socials-tooltip"
-      >
-      </a>
+      <app-nav-button
+        [icon]="'bi-archive-fill legacy-col'"
+        [tooltip]="'View my legacy site'"
+        [url]="'assets/legacy/index.html'"
+      ></app-nav-button>
     </div>
 </section>
     
