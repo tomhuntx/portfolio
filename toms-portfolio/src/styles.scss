@@ -41,6 +41,28 @@ h5 {
     line-height: 1.6;
 }
 
+@media screen and (max-width: 800px) {
+    h1 {
+        font: 1rem/1.2 "Hind Guntur", sans-serif;
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: 1;
+        color: var(--primary);
+    }
+    
+    h3 {
+        font: 1rem/1.2 "Hind Guntur", sans-serif;
+        font-size: 1.2rem;
+        color: var(--secondary);
+    }
+    
+    .text {
+        color: var(--text);
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
 
 
 /* Legacy from this point onwards */
