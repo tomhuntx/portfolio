@@ -1,0 +1,42 @@
+.flex-column {
+    flex-direction: column;
+}
+
+.socials {
+    &.right {
+        position: absolute;
+        right: 3%;
+        top: 84%;
+        padding: 0;
+        margin: 20px 20px;
+        text-align: center;
+    }
+
+    &.left {
+        position: absolute;
+        left: 4%;
+        top: 84%;
+        padding: 0;
+        margin: 20px 20px;
+        text-align: center;
+    }
+}
+
+.title-card {
+    padding-bottom: 100px;
+    width: 600px;
+}
+
+.hello {
+    padding-bottom: 15px;
+}
+
+.description {
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .title-card {
+        width: 80%;
+    }
+}
