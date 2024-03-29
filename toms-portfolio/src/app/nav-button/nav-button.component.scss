@@ -1,18 +1,16 @@
-.nav-button {
-    a {
-        display: inline-block;
-        position: relative;
-        font-size: 30px;
-        width: 60px;
-        height: 60px;
-        cursor: pointer;
-    }
+.socials a {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
 
-    a:hover {
+    &:hover {
         color: var(--secondary);
     }
 
-    a:active {
+    &:active {
         color: var(--primary);
     }
 }
