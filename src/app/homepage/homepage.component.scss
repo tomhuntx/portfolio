@@ -9,6 +9,8 @@
     padding: 0;
     display: flex;
     flex-direction: row;
+    min-width: 200px;
+    padding: 20px;
 
     &.bottom-right {
         top: 84%;
@@ -24,6 +26,7 @@
         position: absolute;
         bottom: 84%;
         right: 4%;
+        justify-content: right;
     }
 }
 

@@ -2,14 +2,6 @@
 <header class="position-fixed page-header">
   <nav class="flex">
     <a href="" class="logo bold" id="nav-here"><p>TH</p></a>
-    <ul class="nav-list flex no-list">
-      <li><a href="assets/legacy/about.html">About</a></li>
-      <li><a href="assets/legacy/projects.html">Projects</a></li>
-      <li><a href="assets/legacy/resume.html">Resume</a></li>
-      <li><a href="assets/legacy/devblog.html">Blog</a></li>
-      <li><a href="assets/legacy/contact.html">Contact</a></li>
-      <li><a></a></li>
-    </ul>
   </nav>
 </header>
 <div class="flex justify-content-center align-items-center vh-100 bg-main">
@@ -52,6 +44,9 @@
       [tooltip]="'View my legacy site'"
       [url]="'assets/legacy/index.html'"
     ></app-nav-button>
+  </div>
+  <div class="corner-item top-right dropdown">
+    <app-dropdown [icon]="'bi-list'"></app-dropdown>
   </div>
 </div>
     

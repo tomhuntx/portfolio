@@ -1,0 +1,20 @@
+.dropdown {
+    display: inline-block;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 10px 10px 0;
+
+    &:hover {
+        color: var(--secondary);
+    }
+
+    &:active {
+        color: var(--primary);
+    }
+
+    &::after {
+        font-size: 20px;
+        margin: auto;
+    }
+}
