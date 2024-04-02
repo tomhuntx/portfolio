@@ -1,7 +1,7 @@
 
-<header class="position-fixed bg-main page-header">
-  <nav class="flex justify-content-center">
-    <a href="" class="logo bold flex-1" id="nav-here"><p>TH</p></a>
+<header class="position-fixed page-header">
+  <nav class="flex">
+    <a href="" class="logo bold" id="nav-here"><p>TH</p></a>
     <ul class="nav-list flex no-list">
       <li><a href="assets/legacy/about.html">About</a></li>
       <li><a href="assets/legacy/projects.html">Projects</a></li>
@@ -29,7 +29,7 @@
     </div>
   </div>
     
-  <div class="socials right">
+  <div class="corner-item bottom-right">
       <app-nav-button
         [icon]="'bi-linkedin'"
         [tooltip]="'View my LinkedIn profile'"
@@ -46,7 +46,7 @@
         [url]="'assets/documents/Tom Hunter\'s Resume.pdf'"
       ></app-nav-button>
   </div>
-  <div class="socials left legacy">
+  <div class="corner-item bottom-left legacy">
     <app-nav-button
       [icon]="'bi-archive-fill legacy-col'"
       [tooltip]="'View my legacy site'"
