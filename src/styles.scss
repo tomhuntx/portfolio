@@ -43,34 +43,23 @@ h5 {
 
 @media screen and (max-width: 800px) {
     h1 {
-        font: 1rem/1.2 "Hind Guntur", sans-serif;
         font-size: 3.6rem;
-        font-weight: 500;
-        line-height: 1;
-        color: var(--primary);
     }
     
     h3 {
-        font: 1rem/1.2 "Hind Guntur", sans-serif;
         font-size: 1.2rem;
-        color: var(--secondary);
     }
     
     .text {
-        color: var(--text);
         font-size: 1rem;
         line-height: 1.6;
     }
 }
 
-
-
-/* Legacy from this point onwards */
-
 :root {
     // New colours
-    --primary: #1b7df5;
-    --secondary: #5eccff;
+    --primary: #007bff;
+    --secondary: #29f8ff;
     --text: white;
     --legacy: #999999;
 
@@ -86,23 +75,9 @@ h5 {
     --nav: white;
     --nav-hover: #5ecdff;
     --nav-here: #1a79ed;
-    
-    --blue: #0090f0;
-    --orange: #F29829;
-    --purple: #a200ff;
-    
-    --gray: #cbcfd3;
-    --white: #ffffff;
-    --black: #1a1a1a;
-    --lightwhite: whitesmoke;
-    --lightblue: #009dd3;
-    --peach: #ff9469;
-    --transition-delay: 0.3s;
-    --transition-delay-step: 0.3s;
-    --skills-width: 120px;
 }
 
-/* Scrollbar Adjustments */
+/* Legacy from this point onwards */
 
 ::-webkit-scrollbar {
     width: 3px;
