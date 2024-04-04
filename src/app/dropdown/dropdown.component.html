@@ -1,5 +1,5 @@
-<div ngbDropdown class="d-inline-block" display="dynamic" placement="bottom-end" [attr.data-bs-theme]="'dark'">
-    <button [class]="icon" type="button" class="dropdown btn btn-outline-primary" id="dropdown" ngbDropdownToggle>
+<div #dropdown ngbDropdown (openChange)="checkDropdown()" class="d-inline-block dropdown-container" display="dynamic" placement="bottom-end" [attr.data-bs-theme]="'dark'">
+    <button [class]="icon" type="button" class="dropdown btn white-bs-btn" id="dropdown" ngbDropdownToggle [class.selected]="isOpen">
     </button>
     <div ngbDropdownMenu aria-labelledby="dropdown">
         <button ngbDropdownItem>About Me</button>
