@@ -7,27 +7,23 @@ html, body
 }
 
 h1 {
-    font: 1rem/1.2 "Hind Guntur", sans-serif;
-    font-size: 6rem;
+    font: 5.5rem/1.2 "Hind Guntur", sans-serif;
     font-weight: 500;
     line-height: 1;
     color: var(--primary);
 }
 
 h2 {
-    font: 1rem/1.2 "Hind Guntur", sans-serif;
-    font-size: 2.7rem;
+    font: 2.7rem/1.2 "Hind Guntur", sans-serif;
 }
 
 h3 {
-    font: 1rem/1.2 "Hind Guntur", sans-serif;
-    font-size: 1.5rem;
+    font: 1.5rem/1.2 "Hind Guntur", sans-serif;
     color: var(--secondary);
 }
 
 h4 {
-    font: 1rem/1.2 "Lucida Console", Monaco, monospace;
-    font-size: 1.3rem;
+    font: 1.4rem/1.2 "Lucida Console", Monaco, monospace;
     padding: 10px;
 }
 
@@ -43,7 +39,7 @@ h5 {
 
 @media screen and (max-width: 800px) {
     h1 {
-        font-size: 3.6rem;
+        font-size: 3.8rem;
     }
     
     h3 {
@@ -59,7 +55,7 @@ h5 {
 :root {
     // New colours
     --primary: #007bff;
-    --secondary: #29f8ff;
+    --secondary: #00eaff;
     --text: white;
     --legacy: #999999;
 
@@ -68,8 +64,8 @@ h5 {
     --title-text: #1b7df5;
     --subtitle-text: #5eccff;
 
-    --bg-main: #1e2124; 
-    --bg-sub: #33354d;
+    --bg-primary: #1c212e; 
+    --bg-secondary: #161d26;
     --links: #bf4fff;
     
     --nav: white;
@@ -81,7 +77,7 @@ h5 {
 
 ::-webkit-scrollbar {
     width: 3px;
-    background: var(--bg-main);
+    background: var(--bg-primary);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -293,7 +289,7 @@ a {
 }
 
 .bg-main {
-    background: var(--bg-main);
+    background: var(--bg-primary);
 }
 
 .bg-grey {
@@ -302,10 +298,6 @@ a {
 
 .txt-white {
     color: var(--white);;
-}
-
-.bg-sub {
-    background: var(--bg-sub);
 }
 
 .i {
@@ -418,7 +410,6 @@ a {
 body {
     font: 1rem/1.2 'Roboto Mono', monospace;
     color: var(--text);
-    background: var(--bg-sub);
 }
 
 
