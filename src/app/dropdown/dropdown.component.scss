@@ -3,7 +3,6 @@
     font-size: 40px;
     display: flex;
     flex-direction: row-reverse;
-    background-color: var(--bg-secondary);
     padding: 0;
     
     &:hover {
@@ -12,6 +11,7 @@
 
     &:active {
         color: var(--primary);
+        border-color: transparent;
     }
 
     &::after {
@@ -19,27 +19,27 @@
     }
 
     &::before {
-        padding: 5px;
+        padding: 4px;
     }
-}
-
-.white-bs-btn {
-    --bs-btn-color: var(--text);
-    --bs-btn-border-color: var(--text);
-    --bs-btn-hover-color: var(--text);
-    --bs-btn-hover-bg: var(--text);
-    --bs-btn-hover-border-color: var(--text);
-    --bs-btn-focus-shadow-rgb: 13, 110, 253;
-    --bs-btn-active-color: var(--text);
-    --bs-btn-active-border-color: var(--text);
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: var(--text);
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: var(--text);
-    --bs-gradient: none;
-
 }
 
 .selected {
     color: var(--primary);
+}
+
+.dropdown-menu {
+    background: none;
+    border: 1px solid white;
+    text-align: right;
+
+    .dropdown-item {
+        background: none;
+        color: var(--text);
+        &:hover {
+            color: var(--secondary);
+        }
+        &:active {
+            color: var(--primary);
+        }
+    }
 }

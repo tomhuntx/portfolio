@@ -10,13 +10,7 @@ import { NgbDropdown, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class DropdownComponent {
   @Input() icon = '';
-  isOpen = false;
-  @ViewChild(NgbDropdown) dropdown: NgbDropdown;
 
   onClick(): void {
-  }
-
-  checkDropdown(): void {
-    this.isOpen = this.dropdown.isOpen();
   }
 }
