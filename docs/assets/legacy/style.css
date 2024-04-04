@@ -286,6 +286,10 @@ ul.arrow li::before {
     margin-right: 20px;
 }
 
+.bg-main {
+    background: var(--bg-main);
+}
+
 .bg-grey {
     background: #e3e3e3;
 }
