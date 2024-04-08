@@ -3,10 +3,9 @@ import {
   NgbDropdownConfig,
   NgbDropdownModule,
 } from '@ng-bootstrap/ng-bootstrap';
-import { NavigationEnd, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { NavigationItem } from './navigation-item';
 import { CommonModule } from '@angular/common';
-import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-dropdown',

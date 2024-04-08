@@ -23,13 +23,16 @@
 }
 
 .dropdown-menu {
-  background: none;
+  background: rgba(0, 0, 0, 0.2);
   border: 1px solid white;
   text-align: right;
+  min-width: fit-content;
 
   .dropdown-item {
     background: none;
+    width: 100%;
     color: var(--text);
+    font-size: 18px;
     &:hover {
       color: var(--secondary);
     }
@@ -41,4 +44,5 @@
 
 .selected {
   color: var(--primary) !important;
+  font-weight: bold;
 }
