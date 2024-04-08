@@ -30,27 +30,9 @@
   }
 }
 
-.title-card {
-  padding: 50px;
-  padding-bottom: 80px;
-  width: 800px;
+.glow-box {
   background-color: var(--bg-secondary);
   border-radius: 1.5rem;
   border: rgba(0, 255, 255, 0.8) solid;
   box-shadow: -0.5rem 0.5rem 2rem rgba(0, 255, 255, 0.6);
-}
-
-.hello {
-  padding-bottom: 15px;
-}
-
-.description {
-  padding-top: 30px;
-}
-
-@media screen and (max-width: 800px) {
-  .title-card {
-    width: 90%;
-    padding: 40px;
-  }
 }

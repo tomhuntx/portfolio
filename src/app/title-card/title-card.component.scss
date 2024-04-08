@@ -1,0 +1,20 @@
+.title-card {
+  padding: 50px;
+  padding-bottom: 80px;
+  width: 800px;
+}
+
+.hello {
+  padding-bottom: 15px;
+}
+
+.description {
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .title-card {
+    width: 90%;
+    padding: 40px;
+  }
+}

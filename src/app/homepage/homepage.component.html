@@ -1,42 +1,29 @@
-
 <header class="position-fixed page-header">
   <nav class="flex">
     <a href="" class="logo bold" id="nav-here"><p>TH</p></a>
   </nav>
 </header>
 <div class="flex justify-content-center align-items-center vh-100">
-  <div class="title-card">
-    <div class="row text hello">
-      Hi there, I'm
-    </div>
-    <div class="row">
-      <h1>Tom Hunter,</h1>
-    </div>
-    <div class="row">
-      <h3><i class="bi-stack"></i>&ensp;Full-Stack Software Developer.</h3>
-    </div>
-    <div class="row text description">
-      I'm a practiced professional at building and maintaining reliable, secure, and user-friendly apps. 
-      I excel at using modern skills to design and develop software solutions to industry needs.
-    </div>
+  <div class="glow-box">
+    <router-outlet></router-outlet>
   </div>
-    
+
   <div class="corner-item bottom-right">
-      <app-nav-button
-        [icon]="'bi-linkedin'"
-        [tooltip]="'View my LinkedIn profile'"
-        [url]="'https://www.linkedin.com/in/tom-w-hunter/'"
-      ></app-nav-button>
-      <app-nav-button
-        [icon]="'bi-envelope-at-fill'"
-        [tooltip]="'Send me an email'"
-        [url]="'mailto:tomhunter.dev@gmail.com'"
-      ></app-nav-button>
-      <app-nav-button
-        [icon]="'bi-file-earmark-arrow-down-fill'"
-        [tooltip]="'View my resume'"
-        [url]="'assets/documents/Tom Hunter\'s Resume.pdf'"
-      ></app-nav-button>
+    <app-nav-button
+      [icon]="'bi-linkedin'"
+      [tooltip]="'View my LinkedIn profile'"
+      [url]="'https://www.linkedin.com/in/tom-w-hunter/'"
+    ></app-nav-button>
+    <app-nav-button
+      [icon]="'bi-envelope-at-fill'"
+      [tooltip]="'Send me an email'"
+      [url]="'mailto:tomhunter.dev@gmail.com'"
+    ></app-nav-button>
+    <app-nav-button
+      [icon]="'bi-file-earmark-arrow-down-fill'"
+      [tooltip]="'View my resume'"
+      [url]="'assets/documents/Tom Hunter\'s Resume.pdf'"
+    ></app-nav-button>
   </div>
   <div class="corner-item bottom-left legacy">
     <app-nav-button
@@ -49,4 +36,3 @@
     <app-dropdown [icon]="'bi-list'"></app-dropdown>
   </div>
 </div>
-    

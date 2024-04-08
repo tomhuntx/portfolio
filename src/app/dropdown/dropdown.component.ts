@@ -1,5 +1,6 @@
-import { Component, Input, ViewChild } from '@angular/core';
-import { NgbDropdown, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { Component, Input, inject } from '@angular/core';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dropdown',
@@ -9,7 +10,10 @@ import { NgbDropdown, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./dropdown.component.scss'],
 })
 export class DropdownComponent {
+  router = inject(Router);
   @Input() icon = '';
 
-  onClick(): void {}
+  navigate(url: string): void {
+    this.router.navigateByUrl(url);
+  }
 }

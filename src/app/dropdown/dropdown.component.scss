@@ -1,9 +1,8 @@
 .dropdown {
   display: inline-block;
   font-size: 40px;
-  display: flex;
-  flex-direction: row-reverse;
   padding: 0;
+  height: 55px;
 
   &:hover {
     color: var(--secondary);

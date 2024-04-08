@@ -13,8 +13,8 @@
     ngbDropdownToggle
   ></button>
   <div ngbDropdownMenu aria-labelledby="dropdown">
-    <button ngbDropdownItem>About Me</button>
+    <button ngbDropdownItem (click)="navigate('about-me')">About Me</button>
+    <button ngbDropdownItem>My Skills</button>
     <button ngbDropdownItem>My Projects</button>
-    <button ngbDropdownItem>Etc</button>
   </div>
 </div>

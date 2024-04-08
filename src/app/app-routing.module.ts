@@ -6,7 +6,7 @@ import { TitleCardComponent } from './title-card/title-card.component';
 const routes: Routes = [
   { path: '', component: TitleCardComponent },
   {
-    path: 'about',
+    path: 'about-me',
     data: { preload: true },
     component: AboutCardComponent,
   },
