@@ -1,37 +1,37 @@
 .title {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    text-align: center;
-    font-size: 32px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  font-size: 32px;
 }
 
 .wip-text {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
 }
 
 .circle-gradient {
-    position: absolute;
-    background: radial-gradient(transparent 65%, #a2b3fc 69.5%, transparent 70%);
-    pointer-events: none;
-    width: 65%;
-    aspect-ratio: 1 / 1;
-    left: 19%;
-    top: -15%;
-    margin: auto;
-    animation: animateCircle 5s infinite alternate;
+  position: absolute;
+  background: radial-gradient(transparent 65%, #a2b3fc 69.5%, transparent 70%);
+  pointer-events: none;
+  width: 65%;
+  aspect-ratio: 1 / 1;
+  left: 19%;
+  top: -15%;
+  margin: auto;
+  animation: animateCircle 5s infinite alternate;
 }
 
 @keyframes animateCircle {
-    to {
-        background-position:top left;
-    }
+  to {
+    background-position: top left;
+  }
 }
 
 .homepage {
-    background-color: var(--bg-primary);
-    background-image: url("assets/img/cubes-bg.png");
+  background-color: var(--bg-primary);
+  background-image: url("assets/img/cubes-bg.png");
 }

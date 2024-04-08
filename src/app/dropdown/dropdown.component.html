@@ -1,9 +1,20 @@
-<div ngbDropdown class="d-inline-block" display="dynamic" placement="bottom-end" [attr.data-bs-theme]="'dark'">
-    <button [class]="icon" type="button" class="dropdown btn" id="dropdown" ngbDropdownToggle>
-    </button>
-    <div ngbDropdownMenu aria-labelledby="dropdown">
-        <button ngbDropdownItem>About Me</button>
-        <button ngbDropdownItem>My Projects</button>
-        <button ngbDropdownItem>Etc</button>
-    </div>
+<div
+  ngbDropdown
+  class="d-inline-block"
+  display="dynamic"
+  placement="bottom-end"
+  [attr.data-bs-theme]="'dark'"
+>
+  <button
+    [class]="icon"
+    type="button"
+    class="dropdown btn"
+    id="dropdown"
+    ngbDropdownToggle
+  ></button>
+  <div ngbDropdownMenu aria-labelledby="dropdown">
+    <button ngbDropdownItem>About Me</button>
+    <button ngbDropdownItem>My Projects</button>
+    <button ngbDropdownItem>Etc</button>
+  </div>
 </div>

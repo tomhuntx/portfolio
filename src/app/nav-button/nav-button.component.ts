@@ -7,7 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [NgbModule],
   encapsulation: ViewEncapsulation.None,
   templateUrl: './nav-button.component.html',
-  styleUrls: ['./nav-button.component.scss']
+  styleUrls: ['./nav-button.component.scss'],
 })
 export class NavButtonComponent {
   @Input() icon = '';
@@ -16,6 +16,6 @@ export class NavButtonComponent {
   @Input() openNewTab = true;
 
   onClick(): void {
-    window.open(this.url, this.openNewTab ? "_blank" : '');
+    window.open(this.url, this.openNewTab ? '_blank' : '');
   }
 }

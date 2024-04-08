@@ -6,11 +6,10 @@ import { NgbDropdown, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
   standalone: true,
   imports: [NgbDropdownModule],
   templateUrl: './dropdown.component.html',
-  styleUrls: ['./dropdown.component.scss']
+  styleUrls: ['./dropdown.component.scss'],
 })
 export class DropdownComponent {
   @Input() icon = '';
 
-  onClick(): void {
-  }
+  onClick(): void {}
 }

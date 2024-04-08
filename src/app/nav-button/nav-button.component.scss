@@ -1,49 +1,49 @@
 .nab-button {
-    display: inline-block;
-    position: relative;
-    font-size: 30px;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
 
-    &:hover {
-        color: var(--secondary);
-    }
+  &:hover {
+    color: var(--secondary);
+  }
 
-    &:active {
-        color: var(--primary);
-    }
+  &:active {
+    color: var(--primary);
+  }
 }
 
 .legacy a {
-    color: var(--legacy);
-    &:hover {
-        opacity: 0.8;
-    }
-    &:active {
-        opacity: 0.6;
-    }
+  color: var(--legacy);
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
 }
 
-.socials-tooltip  {
-    .tooltip-inner {
-        height: auto;
-        border: 2px solid var(--secondary);
-        padding: 10px 15px;
-        margin-bottom: 20px;
-    }
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &::after {
-        content: "";
-        margin-bottom: 15px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: var(--text) transparent transparent transparent;
-    }
+.socials-tooltip {
+  .tooltip-inner {
+    height: auto;
+    border: 2px solid var(--secondary);
+    padding: 10px 15px;
+    margin-bottom: 20px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &::after {
+    content: "";
+    margin-bottom: 15px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--text) transparent transparent transparent;
+  }
 
-    .tooltip-arrow {
-        display: none;
-    }
+  .tooltip-arrow {
+    display: none;
+  }
 }

@@ -7,16 +7,14 @@ import { TitleCardComponent } from './title-card/title-card.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HomepageComponent,
-    TitleCardComponent
+    TitleCardComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
