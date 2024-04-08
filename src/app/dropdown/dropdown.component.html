@@ -9,12 +9,24 @@
     [class]="icon"
     type="button"
     class="dropdown btn"
-    id="dropdown"
+    id="dropdownConfig"
     ngbDropdownToggle
   ></button>
-  <div ngbDropdownMenu aria-labelledby="dropdown">
-    <button ngbDropdownItem (click)="navigate('about-me')">About Me</button>
-    <button ngbDropdownItem>My Skills</button>
-    <button ngbDropdownItem>My Projects</button>
+  <div ngbDropdownMenu aria-labelledby="dropdownConfig">
+    <div *ngFor="let button of buttons">
+      <button
+        ngbDropdownItem
+        (click)="navigate(button.url)"
+        [ngClass]="{ selected: button.selected }"
+      >
+        {{ button.name }}
+      </button>
+    </div>
   </div>
 </div>
+
+<!--
+  todo: switch to new control flow - is erroring for some reason.
+  @for (button of buttons; track button) {
+  {{ button.name }} 
+} -->

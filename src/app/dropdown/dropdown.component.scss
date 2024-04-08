@@ -22,10 +22,6 @@
   }
 }
 
-.selected {
-  color: var(--primary);
-}
-
 .dropdown-menu {
   background: none;
   border: 1px solid white;
@@ -41,4 +37,8 @@
       color: var(--primary);
     }
   }
+}
+
+.selected {
+  color: var(--primary) !important;
 }

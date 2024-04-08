@@ -6,10 +6,11 @@ import { TitleCardComponent } from './title-card/title-card.component';
 const routes: Routes = [
   { path: '', component: TitleCardComponent },
   {
-    path: 'about-me',
+    path: 'about',
     data: { preload: true },
     component: AboutCardComponent,
   },
+  { path: '**', redirectTo: '/' },
 ];
 
 @NgModule({
