@@ -17,6 +17,4 @@ import { RouterOutlet } from '@angular/router';
     RouterOutlet,
   ],
 })
-export class HomepageComponent implements OnInit {
-  ngOnInit(): void {}
-}
+export class HomepageComponent {}

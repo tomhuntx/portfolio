@@ -6,7 +6,7 @@ h1 {
 }
 
 h2 {
-  font: 4rem/1.2 "Hind Guntur", sans-serif;
+  font: 3rem/1.2 "Hind Guntur", sans-serif;
   font-weight: 500;
   color: var(--primary);
 }
@@ -67,6 +67,73 @@ h5 {
   --nav-hover: #5ecdff;
   --nav-here: #1a79ed;
 }
+
+// BEGIN Cards
+
+.body-card {
+  padding: 50px;
+  width: 60vw;
+}
+
+.description-wrapper {
+  -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent);
+  overflow-y: scroll;
+  max-height: 60vh;
+  padding-bottom: 20px;
+}
+
+.description {
+  padding: 30px 0 80px 0;
+  p,
+  ul {
+    padding-bottom: 5px;
+  }
+
+  .row,
+  .col {
+    margin: 0;
+  }
+
+  h4 {
+    padding-top: 10px;
+  }
+
+  .section {
+    padding-bottom: 10px;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 20px auto;
+  justify-content: start;
+  align-items: center;
+  display: inline-block;
+  width: 100%;
+}
+
+li::before {
+  content: "➤";
+  padding-right: 10px;
+  color: var(--tertiary);
+}
+
+.footer {
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+  .body-card {
+    width: 90vw;
+  }
+}
+
+// END Cards
 
 /* Legacy from this point onwards */
 
