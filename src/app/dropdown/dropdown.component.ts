@@ -27,7 +27,6 @@ export class DropdownComponent implements OnInit {
   public buttons: NavigationItem[] = [
     { name: 'Home', url: '', selected: false },
     { name: 'About Me', url: 'about', selected: true },
-    { name: 'My Skills', url: 'skills', selected: true },
   ];
 
   ngOnInit(): void {

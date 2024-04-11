@@ -11,11 +11,6 @@ const routes: Routes = [
     data: { preload: true },
     component: AboutCardComponent,
   },
-  {
-    path: 'skills',
-    data: { preload: true },
-    component: SkillsCardComponent,
-  },
   { path: '**', redirectTo: '/' },
 ];
 
