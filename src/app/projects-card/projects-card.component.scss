@@ -1,0 +1,23 @@
+.charm-img {
+  padding: 0;
+  max-height: 400px;
+  width: auto;
+  margin: auto;
+}
+
+.charm-img-mobile {
+  padding: 0;
+  max-height: 400px;
+  width: auto;
+  margin: auto;
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .charm-img-mobile {
+    display: block;
+  }
+  .charm-img {
+    display: none;
+  }
+}

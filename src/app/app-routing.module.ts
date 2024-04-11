@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AboutCardComponent } from './about-card/about-card.component';
 import { TitleCardComponent } from './title-card/title-card.component';
-import { SkillsCardComponent } from './skills-card/skills-card.component';
+import { ProjectsCardComponent } from './projects-card/projects-card.component';
 
 const routes: Routes = [
   { path: '', component: TitleCardComponent },
@@ -10,6 +10,11 @@ const routes: Routes = [
     path: 'about',
     data: { preload: true },
     component: AboutCardComponent,
+  },
+  {
+    path: 'projects',
+    data: { preload: true },
+    component: ProjectsCardComponent,
   },
   { path: '**', redirectTo: '/' },
 ];
