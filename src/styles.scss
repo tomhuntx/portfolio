@@ -31,21 +31,6 @@ h5 {
   line-height: 1.6;
 }
 
-@media screen and (max-width: 800px) {
-  h1 {
-    font-size: 3.8rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  .text {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-}
-
 :root {
   // New colours
   --primary: #007bff;
@@ -126,9 +111,58 @@ li::before {
   padding-top: 40px;
 }
 
+// Mobile / tablets / small screens
 @media screen and (max-width: 1500px) {
   .body-card {
     width: 90vw;
+  }
+}
+
+// Mobile
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .h4 {
+    font-size: 1rem;
+  }
+  .text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .homepage {
+    background: var(--bg-secondary) !important;
+  }
+  .glow-box {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  .corner-item {
+    padding: 10px !important;
+    margin: 10px !important;
+  }
+  .top-right {
+    bottom: 88% !important;
+  }
+  .body-card {
+    width: 100% !important;
+    padding: 0 38px 0 42px !important;
+  }
+  .description {
+    padding-top: 20px !important;
+    .section {
+      padding-bottom: 10px !important;
+    }
+    .footer {
+      padding-top: 10px !important;
+    }
   }
 }
 
