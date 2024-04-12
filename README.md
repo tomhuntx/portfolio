@@ -1,4 +1,4 @@
-# Tom Hunter's portfolio webiste project
+## Tom Hunter's portfolio website project
 
 Built to showcase my skills, projects, and otherinformation for future prospective recruiters.
 
