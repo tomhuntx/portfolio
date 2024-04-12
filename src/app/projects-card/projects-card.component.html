@@ -3,7 +3,7 @@
     <h2>My Projects</h2>
   </div>
   <div class="row description-wrapper">
-    <h3>Here are some thing I've been working on</h3>
+    <h3>Here are some things I've been working on</h3>
     <div class="description text">
       <div class="row section">
         <h4>Focus areas for growth</h4>
@@ -14,6 +14,17 @@
           <li>Angular NgRx actions, reducers, and effects</li>
         </ul>
       </div>
+      <div class="row section">
+        <h4>This portfolio website</h4>
+        <p>
+          Built to showcase my skills for all future prospective recruiters.
+        </p>
+        <ul>
+          <li>Built using Angular 17</li>
+          <li>Hosted on GitHub Pages</li>
+        </ul>
+      </div>
+
       <div class="row section">
         <h4>
           Magentus:
@@ -47,7 +58,23 @@
         />
         <p>In this team we use:</p>
         <ul>
-          <li>Jira(link) to ...</li>
+          <li>Agile structure of biweekly sprints</li>
+          <li>
+            <app-link
+              [url]="'https://www.atlassian.com/software/jira'"
+              [text]="'Jira'"
+            ></app-link>
+            to track features and implementations
+          </li>
+          <li>Git for version control</li>
+          <li>
+            <app-link
+              [url]="'https://bitbucket.org/product'"
+              [text]="'Bitbucket'"
+            ></app-link>
+            for pull-requests and branch management
+          </li>
+          <li>Daily stand-ups, weekly estimations, biweekly retrospectives</li>
         </ul>
       </div>
 
