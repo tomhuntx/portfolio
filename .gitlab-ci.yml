@@ -1,0 +1,14 @@
+image: node:18.13.0
+pages:
+  stage: deploy
+  script:
+    - npm install -g @angular/cli@17.1
+    - npm install
+    - ng build
+    - mkdir -p docs
+    - mv dist/fossilizer/* docs/
+  artifacts:
+    paths:
+      - docs
+  only:
+    - master
