@@ -4,11 +4,10 @@ pages:
   script:
     - npm install -g @angular/cli@17.1
     - npm install
-    - ng build
-    - mkdir -p docs
-    - mv dist/fossilizer/* docs/
+    - mkdir -p public
+    - ng build --output-path=dist/public
   artifacts:
     paths:
-      - docs
+      - public
   only:
     - master
