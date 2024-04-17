@@ -1,3 +1,9 @@
+.title-card-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
 .title-card {
   padding: 50px;
   padding-bottom: 80px;
@@ -5,16 +11,9 @@
 }
 
 .hello {
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
-.description {
+.self-description {
   padding-top: 30px;
-}
-
-@media screen and (max-width: 800px) {
-  .title-card {
-    width: 100%;
-    padding: 40px;
-  }
 }

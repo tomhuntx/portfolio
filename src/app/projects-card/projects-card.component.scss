@@ -19,6 +19,7 @@
 @media screen and (max-width: 800px) {
   .charm-img-mobile {
     display: block;
+    max-height: 300px !important;
   }
   .charm-img {
     display: none;
